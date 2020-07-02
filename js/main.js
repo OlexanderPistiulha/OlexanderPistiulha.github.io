@@ -236,11 +236,13 @@ window.addEventListener('DOMContentLoaded', function () {
     coverText[1].innerHTML = 'Поштова розсилка';
     coverText[2].innerHTML = 'Браузерна гра';
     coverText[3].innerHTML = 'Цільова сторінка';
+    coverText[4].innerHTML = 'Інформаційний портал';
 
     coverButton[0].innerHTML = 'Детальніше';
     coverButton[1].innerHTML = 'Детальніше';
     coverButton[2].innerHTML = 'Детальніше';
     coverButton[3].innerHTML = 'Детальніше';
+    coverButton[4].innerHTML = 'Детальніше';
     titleContent.innerHTML = 'Якщо у Вас залишилися які-небудь питання або Ви хочете співпрацювати, просто напишіть мені.';
     formButton.innerHTML = 'Відправити';
 
@@ -304,11 +306,13 @@ window.addEventListener('DOMContentLoaded', function () {
     coverText[1].innerHTML = 'Почтовая рассылка';
     coverText[2].innerHTML = 'Браузерная игра';
     coverText[3].innerHTML = 'Посадочная страничка';
+    coverText[4].innerHTML = 'Информационный сайт';
 
     coverButton[0].innerHTML = 'Посмотреть';
     coverButton[1].innerHTML = 'Посмотреть';
     coverButton[2].innerHTML = 'Посмотреть';
     coverButton[3].innerHTML = 'Посмотреть';
+    coverButton[4].innerHTML = 'Посмотреть';
 
     titleContent.innerHTML = 'Если у Вас остались какие-либо вопросы или Вы хотите сотрудничать, просто напишите мне.';
     formButton.innerHTML = 'Отправить';
@@ -373,12 +377,13 @@ window.addEventListener('DOMContentLoaded', function () {
     coverText[1].innerHTML = 'Newsletter';
     coverText[2].innerHTML = 'Browser game';
     coverText[3].innerHTML = 'Landing Page';
+    coverText[4].innerHTML = 'Web Portal';
 
     coverButton[0].innerHTML = 'VIEW MORE';
     coverButton[1].innerHTML = 'VIEW MORE';
     coverButton[2].innerHTML = 'VIEW MORE';
     coverButton[3].innerHTML = 'VIEW MORE';
-
+    coverButton[4].innerHTML = 'VIEW MORE';
 
     titleContent.innerHTML = 'If you have any questions or want to cooperate, just email me.';
     formButton.innerHTML = 'Send';
@@ -390,6 +395,6 @@ window.addEventListener('DOMContentLoaded', function () {
     chooseFile.innerHTML = 'Select a file';
     sendMessage.innerHTML = 'Send';
   }
- 
+
 
 });
