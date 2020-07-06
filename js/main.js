@@ -203,7 +203,7 @@ window.addEventListener('DOMContentLoaded', function () {
     textTitles[0].innerHTML = 'Про мене';
     textTitles[1].innerHTML = 'Етапи роботи над проектом';
     textTitles[2].innerHTML = 'Проекти';
-    textTitles[3].innerHTML = 'Контакти';
+    // textTitles[3].innerHTML = 'Контакти';
 
     photoTitle.innerHTML = 'Про себе за 10 секунд';
 
@@ -236,21 +236,25 @@ window.addEventListener('DOMContentLoaded', function () {
     coverText[1].innerHTML = 'Поштова розсилка';
     coverText[2].innerHTML = 'Браузерна гра';
     coverText[3].innerHTML = 'Цільова сторінка';
-    coverText[4].innerHTML = 'Інформаційний портал';
+    coverText[4].innerHTML = 'Цільова сторінка';
+    coverText[5].innerHTML = 'Інформаційний портал';
 
     coverButton[0].innerHTML = 'Детальніше';
     coverButton[1].innerHTML = 'Детальніше';
     coverButton[2].innerHTML = 'Детальніше';
     coverButton[3].innerHTML = 'Детальніше';
     coverButton[4].innerHTML = 'Детальніше';
-    titleContent.innerHTML = 'Якщо у Вас залишилися які-небудь питання або Ви хочете співпрацювати, просто напишіть мені.';
-    formButton.innerHTML = 'Відправити';
+    coverButton[5].innerHTML = 'Детальніше';
 
-    document.querySelectorAll('.form__item-input')[0].placeholder = "Ім'я";
-    document.querySelectorAll('.form__item-input')[1].placeholder = 'Пошта';
-    document.querySelector('.form__item-textarea').placeholder = 'Повідомлення';
-    chooseFile.innerHTML = 'Оберіть файл';
-    sendMessage.innerHTML = 'Відправити';
+
+    // titleContent.innerHTML = 'Якщо у Вас залишилися які-небудь питання або Ви хочете співпрацювати, просто напишіть мені.';
+    // formButton.innerHTML = 'Відправити';
+
+    // document.querySelectorAll('.form__item-input')[0].placeholder = "Ім'я";
+    // document.querySelectorAll('.form__item-input')[1].placeholder = 'Пошта';
+    // document.querySelector('.form__item-textarea').placeholder = 'Повідомлення';
+    // chooseFile.innerHTML = 'Оберіть файл';
+    // sendMessage.innerHTML = 'Відправити';
 
   }
 
@@ -273,7 +277,7 @@ window.addEventListener('DOMContentLoaded', function () {
     textTitles[0].innerHTML = 'Обо мне';
     textTitles[1].innerHTML = 'Этапы работы над проектом';
     textTitles[2].innerHTML = 'Проекты';
-    textTitles[3].innerHTML = 'Контакты';
+    // textTitles[3].innerHTML = 'Контакты';
 
     photoTitle.innerHTML = 'О себе за 10 секунд';
 
@@ -306,23 +310,25 @@ window.addEventListener('DOMContentLoaded', function () {
     coverText[1].innerHTML = 'Почтовая рассылка';
     coverText[2].innerHTML = 'Браузерная игра';
     coverText[3].innerHTML = 'Посадочная страничка';
-    coverText[4].innerHTML = 'Информационный сайт';
+    coverText[4].innerHTML = 'Посадочная страничка';
+    coverText[5].innerHTML = 'Информационный сайт';
 
     coverButton[0].innerHTML = 'Посмотреть';
     coverButton[1].innerHTML = 'Посмотреть';
     coverButton[2].innerHTML = 'Посмотреть';
     coverButton[3].innerHTML = 'Посмотреть';
     coverButton[4].innerHTML = 'Посмотреть';
+    coverButton[5].innerHTML = 'Посмотреть';
 
-    titleContent.innerHTML = 'Если у Вас остались какие-либо вопросы или Вы хотите сотрудничать, просто напишите мне.';
-    formButton.innerHTML = 'Отправить';
+    // titleContent.innerHTML = 'Если у Вас остались какие-либо вопросы или Вы хотите сотрудничать, просто напишите мне.';
+    // formButton.innerHTML = 'Отправить';
 
-    document.querySelectorAll('.form__item-input')[0].placeholder = "Имя";
-    document.querySelectorAll('.form__item-input')[1].placeholder = 'Почта';
-    document.querySelector('.form__item-textarea').placeholder = 'Сообщение';
+    // document.querySelectorAll('.form__item-input')[0].placeholder = "Имя";
+    // document.querySelectorAll('.form__item-input')[1].placeholder = 'Почта';
+    // document.querySelector('.form__item-textarea').placeholder = 'Сообщение';
 
-    chooseFile.innerHTML = 'Выберите файл';
-    sendMessage.innerHTML = 'Отправить';
+    // chooseFile.innerHTML = 'Выберите файл';
+    // sendMessage.innerHTML = 'Отправить';
   }
 
   function langEn() {
@@ -344,7 +350,7 @@ window.addEventListener('DOMContentLoaded', function () {
     textTitles[0].innerHTML = 'About me';
     textTitles[1].innerHTML = 'Work stages';
     textTitles[2].innerHTML = 'Projects';
-    textTitles[3].innerHTML = 'Contacts';
+    // textTitles[3].innerHTML = 'Contacts';
 
     photoTitle.innerHTML = 'About me in 10 seconds';
 
@@ -377,23 +383,25 @@ window.addEventListener('DOMContentLoaded', function () {
     coverText[1].innerHTML = 'Newsletter';
     coverText[2].innerHTML = 'Browser game';
     coverText[3].innerHTML = 'Landing Page';
-    coverText[4].innerHTML = 'Web Portal';
+    coverText[4].innerHTML = 'Landing Page';
+    coverText[5].innerHTML = 'Web Portal';
 
     coverButton[0].innerHTML = 'VIEW MORE';
     coverButton[1].innerHTML = 'VIEW MORE';
     coverButton[2].innerHTML = 'VIEW MORE';
     coverButton[3].innerHTML = 'VIEW MORE';
     coverButton[4].innerHTML = 'VIEW MORE';
+    coverButton[5].innerHTML = 'VIEW MORE';
 
-    titleContent.innerHTML = 'If you have any questions or want to cooperate, just email me.';
-    formButton.innerHTML = 'Send';
+    // titleContent.innerHTML = 'If you have any questions or want to cooperate, just email me.';
+    // formButton.innerHTML = 'Send';
 
-    document.querySelectorAll('.form__item-input')[0].placeholder = "Name";
-    document.querySelectorAll('.form__item-input')[1].placeholder = 'Mail';
-    document.querySelector('.form__item-textarea').placeholder = 'Message';
+    // document.querySelectorAll('.form__item-input')[0].placeholder = "Name";
+    // document.querySelectorAll('.form__item-input')[1].placeholder = 'Mail';
+    // document.querySelector('.form__item-textarea').placeholder = 'Message';
 
-    chooseFile.innerHTML = 'Select a file';
-    sendMessage.innerHTML = 'Send';
+    // chooseFile.innerHTML = 'Select a file';
+    // sendMessage.innerHTML = 'Send';
   }
 
 
