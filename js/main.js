@@ -197,7 +197,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
     firstScreenOffer.innerHTML = 'Привіт. Я Олександр. <br/> Веб-розробник повного циклу.';
 
-    firstScreenButtons[0].innerHTML = 'Замовити сайт';
+    firstScreenButtons[0].innerHTML = 'Роботи';
     firstScreenButtons[1].innerHTML = 'Детальніше';
 
     textTitles[0].innerHTML = 'Про мене';
@@ -267,7 +267,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
     firstScreenOffer.innerHTML = 'Привет. Я Александр. <br/> Веб-разроботчик полного цикла.';
 
-    firstScreenButtons[0].innerHTML = 'Заказать сайт';
+    firstScreenButtons[0].innerHTML = 'Работы';
     firstScreenButtons[1].innerHTML = 'Узнать больше';
 
     textTitles[0].innerHTML = 'Обо мне';
@@ -338,8 +338,8 @@ window.addEventListener('DOMContentLoaded', function () {
 
     firstScreenOffer.innerHTML = 'Hey. I am Alexander. <br/>  Full-stack web developer.';
 
-    firstScreenButtons[0].innerHTML = 'Order a site';
-    firstScreenButtons[1].innerHTML = 'view more';
+    firstScreenButtons[0].innerHTML = 'Projects';
+    firstScreenButtons[1].innerHTML = 'View more';
 
     textTitles[0].innerHTML = 'About me';
     textTitles[1].innerHTML = 'Work stages';
