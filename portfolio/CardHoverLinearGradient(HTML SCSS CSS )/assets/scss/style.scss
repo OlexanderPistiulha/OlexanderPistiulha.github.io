@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(131, 130, 130);
+}
+
+.conteiner {
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    width: 320px;
+    height: 400px;
+    margin: 20px;
+    background-color: rgb(49, 49, 49);
+    overflow: hidden;
+    border-radius: 2px;
+    box-shadow: 0 20px 20px rgb(71, 71, 71);
+
+    &__photo-wrapp {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        border: 2px solid rgb(180, 179, 179);
+        z-index: 2;
+        transition: 2s;
+    }
+
+    &__img {
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 100% 0%;
+    }
+
+    &__tittle {
+        position: absolute;
+        z-index: 2;
+        text-align: center;
+        width: 100%;
+        color: rgb(180, 179, 179);
+        transition: 2s;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 600;
+    }
+
+    &__content {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        color: rgb(180, 179, 179);
+        position: absolute;
+        top: 45%;
+        z-index: 2;
+        transition: 2s;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    &__layer {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        top: 99%;
+        background-image: linear-gradient(to bottom, rgba(106, 120, 230, 0.99), rgba(116, 121, 226, 0.99), rgba(127, 121, 222, 0.99), rgba(137, 122, 218, 0.99), rgba(147, 123, 214, 0.99), rgba(157, 123, 210, 0.99), rgba(168, 124, 207, 0.99), rgba(178, 124, 203, 0.99), rgba(188, 125, 199, 0.99), rgba(198, 126, 195, 0.99), rgba(209, 126, 191, 0.99), rgba(219, 127, 187, 0.99));
+        transition: 1s;
+    }
+}
+
+.card:hover .card__layer {
+    top: 0;
+}
+
+.card:hover .card__tittle,
+.card:hover .card__content,
+.card:hover .card__photo-wrapp {
+    color: rgb(63, 62, 62);
+}
+

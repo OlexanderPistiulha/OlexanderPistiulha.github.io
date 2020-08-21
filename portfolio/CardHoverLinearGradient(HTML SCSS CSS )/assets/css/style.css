@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  background-color: #838282;
+}
+
+.conteiner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  width: 320px;
+  height: 400px;
+  margin: 20px;
+  background-color: #313131;
+  overflow: hidden;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 20px 20px #474747;
+          box-shadow: 0 20px 20px #474747;
+}
+
+.card__photo-wrapp {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid #b4b3b3;
+  z-index: 2;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.card__img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 100% 0%;
+     object-position: 100% 0%;
+}
+
+.card__tittle {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  width: 100%;
+  color: #b4b3b3;
+  -webkit-transition: 2s;
+  transition: 2s;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+}
+
+.card__content {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  color: #b4b3b3;
+  position: absolute;
+  top: 45%;
+  z-index: 2;
+  -webkit-transition: 2s;
+  transition: 2s;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card__layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 99%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(106, 120, 230, 0.99)), color-stop(rgba(116, 121, 226, 0.99)), color-stop(rgba(127, 121, 222, 0.99)), color-stop(rgba(137, 122, 218, 0.99)), color-stop(rgba(147, 123, 214, 0.99)), color-stop(rgba(157, 123, 210, 0.99)), color-stop(rgba(168, 124, 207, 0.99)), color-stop(rgba(178, 124, 203, 0.99)), color-stop(rgba(188, 125, 199, 0.99)), color-stop(rgba(198, 126, 195, 0.99)), color-stop(rgba(209, 126, 191, 0.99)), to(rgba(219, 127, 187, 0.99)));
+  background-image: linear-gradient(to bottom, rgba(106, 120, 230, 0.99), rgba(116, 121, 226, 0.99), rgba(127, 121, 222, 0.99), rgba(137, 122, 218, 0.99), rgba(147, 123, 214, 0.99), rgba(157, 123, 210, 0.99), rgba(168, 124, 207, 0.99), rgba(178, 124, 203, 0.99), rgba(188, 125, 199, 0.99), rgba(198, 126, 195, 0.99), rgba(209, 126, 191, 0.99), rgba(219, 127, 187, 0.99));
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.card:hover .card__layer {
+  top: 0;
+}
+
+.card:hover .card__tittle,
+.card:hover .card__content,
+.card:hover .card__photo-wrapp {
+  color: #3f3e3e;
+}
+/*# sourceMappingURL=style.css.map */
