@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: 'Georgia';
   src: url("../fonts/Georgia/georgia.ttf") format("truetype");
@@ -45,14 +44,11 @@ a {
 
 li {
   list-style-type: none;
-  /* Убираем маркеры */
 }
 
 ul {
   margin-left: 0;
-  /* Отступ слева в браузере IE и Opera */
   padding-left: 0;
-  /* Отступ слева в браузере Firefox, Safari, Chrome */
 }
 
 .mobile {
@@ -170,7 +166,6 @@ ul {
 }
 
 .mobile__logo {
-  width: 70%;
   margin: 0 auto;
   margin-bottom: 53px;
   text-align: center;
