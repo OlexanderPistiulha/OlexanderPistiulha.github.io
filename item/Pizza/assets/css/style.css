@@ -14,11 +14,6 @@
           box-sizing: border-box;
 }
 
-html,
-body {
-  overflow: hidden;
-}
-
 ol,
 ul,
 li {
