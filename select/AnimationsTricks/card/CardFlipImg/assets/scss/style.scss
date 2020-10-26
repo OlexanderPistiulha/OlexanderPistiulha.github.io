@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+
+.face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    & span {
+        width: 150px;
+        height: 100%;
+        transition: 1s;
+    }
+
+    &__one {
+        & span {
+            background: url(../img/bg.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transform-origin: top;
+        }
+    }
+
+    &:hover &__one {
+        & span {
+            transform: rotate(90deg);
+        }
+    }
+
+
+    &__two {}
+
+    &__three {}
+
+    &__four {}
+}
+
+
+.box {
+    position: relative;
+    width: 600px;
+    height: 400px;
+
+    @media screen and (max-width: 650px) {
+        width: 400px;
+    }
+
+    @media screen and (max-width: 450px) {
+        width: 340px;
+        margin: 0 auto;
+    }
+
+
+    &__face {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+       // overflow: hidden;
+
+        & span {
+            width: 150px;
+            height: 100%;
+            transition: 1s;
+
+            @media screen and (max-width: 650px) {
+                width: 100px;
+            }
+
+            @media screen and (max-width: 450px) {
+                width: 60px;
+            }
+
+            &:nth-child(1) {
+                background-position-x: 0;
+                transition-delay: 0s;
+
+                @media screen and (max-width: 650px) {
+                    background-position-x: -100px;
+                }
+
+                @media screen and (max-width: 450px) {
+                    background-position-x: -200px;
+                }
+            }
+
+            &:nth-child(2) {
+                background-position-x: -150px;
+                transition-delay: .2s;
+
+                @media screen and (max-width: 650px) {
+                    background-position-x: -200px;
+                }
+
+                @media screen and (max-width: 450px) {
+                    background-position-x: -260px;
+                }
+            }
+
+            &:nth-child(3) {
+                background-position-x: -300px;
+                transition-delay: .4s;
+
+                @media screen and (max-width: 650px) {
+                    background-position-x: -300px;
+                }
+
+                @media screen and (max-width: 450px) {
+                    background-position-x: -320px;
+                }
+            }
+
+            &:nth-child(4) {
+                background-position-x: -450px;
+                transition-delay: .5s;
+
+                @media screen and (max-width: 650px) {
+                    background-position-x: -400px;
+                }
+
+                @media screen and (max-width: 450px) {
+                    background-position-x: -380px;
+                }
+            }
+        }
+    }
+
+    &__face-one {
+        & span {
+            background: url(../img/bg-one.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transform-origin: top;
+        }
+    }
+
+    &:hover &__face-one {
+        & span {
+            transform: rotateX(90deg) translateY(-50%);
+        }
+    }
+
+    &__face-two {
+        & span {
+            background: url(../img/bg.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transform-origin: bottom;
+            transform: rotateX(90deg) translateY(50%);
+        }
+    }
+
+    &:hover &__face-two {
+        & span {
+            transform: rotateX(0deg) translateY(0);
+        }
+    }
+
+    &__face-three {}
+
+    &__face-four {}
+}

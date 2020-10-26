@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;  
+}
+
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 400px;  
+    overflow: hidden;
+    box-shadow: 0 10px 10px rgba($color: #000000, $alpha: 1.0);
+
+    &__chackbox {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+        outline: none;
+        z-index: 10;
+        opacity: 0;
+    }
+
+    &__toggle {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+        outline: none;
+        z-index: 10;
+        pointer-events: none;
+        border-radius: 50%;
+        background-color: #fff;
+        transition: 0.5s;
+        text-align: center;
+        line-height: 50px;
+        font-size: 36px;
+        box-shadow: 0 0 0 0 rgb(60, 76, 88);
+    }
+
+    &__img-wrapp {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 11;
+        pointer-events: none;
+        padding: 20px;
+        transition: .5s;
+        opacity: 0;
+    }
+
+    &__tittle {
+        color: white;
+    }
+
+    &__text {
+        color: white;
+        line-height: 20px;
+    }
+}
+
+.card__chackbox:checked~.card__toggle { 
+    box-shadow: 0 0 0 500px rgba(60, 76, 88, 0.938);
+    transform: rotate(225deg);
+}
+
+.card__chackbox:checked~.card__content {
+    transition-delay: .5s;
+    opacity: 1;
+}

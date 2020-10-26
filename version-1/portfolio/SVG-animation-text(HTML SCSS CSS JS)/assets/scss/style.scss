@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,900&display=swap');
+
+html {
+    background: #eee;
+    overflow-y: auto;
+}
+
+body {
+    min-height: 150vh;
+    font-family: 'Merriweather', serif;
+    line-height: 1.5;
+    font-size: 3vmin;
+
+    @media (min-width: 600px) {
+        font-size: 18px;
+    }
+}
+
+p {
+    max-width: 25em;
+    margin: 2em auto;
+    padding: 0 1em;
+    color: rgba(25, 25, 25, .5);
+
+    strong {
+        display: block;
+        text-align: center;
+        color: #000;
+    }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <section first-screen>
+
+            <div class="conteiner">
+                <header class="header">
+                    <div class="logo">
+                        <a href="" class="logo__link">
+                            <img src="assets/img/logo.png" alt="" class="logo__img">
+                        </a>
+                    </div>
+                    <div class="toggle">
+                        <img src="assets/img/toggle.png" alt="" class="toggle__img">
+                    </div>
+                </header>
+            </div>
+
+
+            <div class="banner">
+                <div class="conteiner">
+                    <div class="banner__content">
+                        <h2 class="banner__title">Put on a <span>Happy</span> face</h2>
+                        <p class="banner__text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.Rem
+                            accusantium
+                            cum
+                            repudiandae dolorum quas repellendus architecto temporibus, excepturi inventore fugiat aut
+                            id
+                            illoharum? Iusto earum saepe maxime labore amet voluptates aspernatur necessitatibus
+                            officiis
+                            laboriosam.</p>
+                        <a href="#" class="play">
+                            <img src="assets/img/play.png" alt="" class="play__img">
+                            <span>Watch Trailer</span>
+                        </a>
+                        <div class="slide"></div>
+                        <ul class="list">
+                            <li class="list__item">
+                                <a href="" class="list__link"><img src="assets/img/facebook.png" alt=""
+                                        class="list__img"></a>
+                            </li>
+                            <li class="list__item">
+                                <a href="" class="list__link"><img src="assets/img/instagram.png" alt=""
+                                        class="list__img"></a>
+                            </li>
+                            <li class="list__item">
+                                <a href="" class="list__link"><img src="assets/img/twitter.png" alt=""
+                                        class="list__img"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trailer trailer__closer">
+                <video
+                    src="https://ivi-vod-ru-cis.gcdn.co/jW1JTDkAfL23zccTueBB8cj180kqNjv7TgsCgQBgXT6UHHZG03DN40702/mp4-hi/uvwVHKRXKSND6LABKsxAnw,1602619323/storage33/contents/8/0/c01a309d15efa0db560e9e8add4508.mp4?rnd=0.32186975988628874"
+                    class="trailer__video" controls="true"></video>
+                <img src="assets/img/close.png" alt="" class="trailer__close">
+            </div>
+
+        </section>
+    </div>
+
+
+
+    <script>
+        let play = document.querySelector('.play');
+        let close = document.querySelector('.trailer__close');
+
+        close.addEventListener('click', () => {
+            let trailer = document.querySelector('.trailer');
+            let video = document.querySelector('.trailer__video');
+
+            trailer.classList.remove('trailer__active');
+            trailer.classList.add('trailer__closer');
+
+            video.currentTime = 0;
+            video.pause();
+        });
+
+        play.addEventListener('click', function () {
+            let trailer = document.querySelector('.trailer');
+            trailer.classList.add('trailer__active');
+            trailer.classList.remove('trailer__closer');
+
+        })
+    </script>
+
+</body>
+
+</html>

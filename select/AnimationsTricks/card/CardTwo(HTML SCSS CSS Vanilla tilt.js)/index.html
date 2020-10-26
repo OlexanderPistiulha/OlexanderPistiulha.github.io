@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <div class="conteier data-tilt">
+        <div class="box">
+            <div class="box__img-wrapp">
+                <img src="assets/img/1.jpg" alt="" class="box__img">
+            </div>
+            <div class="box__content-wrapp">
+                <h1>Lorem ipsum dolor.</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum cupiditate quas eligendi totam
+                    reprehenderit assumenda animi similique et nobis suscipit.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="conteier">
+        <div class="box">
+            <div class="box__img-wrapp">
+                <img src="assets/img/2.jpg" alt="" class="box__img">
+            </div>
+            <div class="box__content-wrapp">
+                <h1>Lorem ipsum dolor.</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum cupiditate quas eligendi totam
+                    reprehenderit assumenda animi similique et nobis suscipit.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+
+    <script type="text/javascript" src="assets/js/tilt.js"></script>
+
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".box"), {
+            max: 25,
+            speed: 400
+        });
+    </script>
+</body>
+
+</html>

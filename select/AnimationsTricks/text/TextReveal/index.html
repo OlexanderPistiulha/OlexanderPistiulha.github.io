@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <section>
+        <h2 class="title">Is this my title or yours here? 仮想</h2>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, ad! Distinctio omnis nesciunt
+            repellat quidem doloribus nemo vitae mollitia non ad quo iure cumque nam ?</p>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="assets/js/textyle.js"></script>
+    <script>
+        $(function () {
+            $('.title').textyle({
+                easing: 'linear',
+                callback: function () {
+                    $(this).css({
+                        color: ' rgb(131, 50, 21)',
+                        transform: 'translateY(0px) rotateY(360deg)'
+                    });
+                }
+            });
+            $('.text').textyle({               
+                callback: function () {
+                    $(this).css({
+                        color: ' #000',
+                        //transform: 'translateY(0px) rotateY(360deg)'
+                    });
+                }
+            });
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.conteiner {
+    width: 100%;
+    height: 100vh;
+
+    &__loyer-one {
+        opacity: 0;
+        position: absolute;
+        top: 49%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url(../img/1.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 50%;
+        height: 60%;
+        z-index: 2;
+        transition: 1s;
+
+        @media screen and (max-width: 1000px) {
+            width: 85%;
+        }
+    }
+
+    &__loyer-one:hover {
+        opacity: 1;
+        box-shadow: 0 25px 60px rgba(0, 0, 0, .8);
+    }
+
+    &__loyer-one:hover~&__loyer-two {
+        filter: blur(10px);
+    }
+
+    &__loyer-two {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        transition: 1s;
+    }
+}

@@ -1,0 +1,130 @@
+.select {
+  width: 48%;
+  position: relative;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 1100px) {
+  .select {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .select {
+    width: 100%;
+  }
+}
+
+.select.open .select__dropdown {
+  display: block;
+}
+
+.select.open .select__input {
+  border-bottom: none;
+}
+
+.select__input {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 22px -6px rgba(0, 0, 0, 0.46);
+          box-shadow: 0px 0px 22px -6px rgba(0, 0, 0, 0.46);
+  border-radius: 5px;
+  height: 46px;
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.select__input-text {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.select__input-img {
+  width: 18px;
+  height: 18px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.select__input-img-down {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+.select__input-img-up {
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+}
+
+.select__dropdown {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 10px 22px -6px rgba(0, 0, 0, 0.46);
+          box-shadow: 0px 10px 22px -6px rgba(0, 0, 0, 0.46);
+  border-radius: 5px;
+  top: 46px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  max-height: 264px;
+  overflow-y: auto;
+}
+
+.select__list {
+  list-style: none;
+}
+
+.select__item {
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  color: #ccc;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.select__item:hover {
+  background-color: #eee;
+  cursor: pointer;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+.select__link {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  width: 100%;
+  padding: 15px;
+  display: inline-block;
+  text-decoration: none;
+  color: #2e2d2d;
+}
+
+.select__link.selected {
+  background-color: #b9b8b8;
+}
+
+.select__link.selected .select__link {
+  color: #fffdfd;
+}
+/*# sourceMappingURL=style.css.map */

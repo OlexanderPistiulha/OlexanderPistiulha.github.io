@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapp {
+    height: 200vh;
+}
+
+.conteinet {
+    position: relative;
+    width: 100%;
+    height: 2000px;
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.content {
+    padding: 100px;
+
+    @media screen and (max-width: 800px) {
+        padding: 100px 20px;
+    }
+}

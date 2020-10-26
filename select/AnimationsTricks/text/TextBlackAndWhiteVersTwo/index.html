@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <section>
+        <div class="box">
+            <h1 class="title">Black and White</h1>
+            <div class="mask"></div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+        $('.box').mousemove(function (e) {
+            var window = $(this);
+            var x_axis = e.pageX - window.offset().left;
+            $('.mask').css({
+                left: x_axis,
+                backgroundPosition: '-' + x_axis + 'px'
+            })
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 30px;
+    position: relative;
+    width: 320px;
+    height: 400px;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    transition: .5s;
+
+    @media screen and (max-width: 360px) {
+        width: 260px;
+        margin: 30px 10px;
+    }
+
+    &__front {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background-color: black;
+        transform: rotateY(0deg);
+        transition: 0.5s;
+        box-shadow: 0 10px 10px rgba($color: #6e6e6e, $alpha: 1.0);
+
+    }
+
+    &__img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__back {
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background-color: rgb(109, 135, 168);
+        transform: rotateY(180deg);
+        transition: 0.5s;
+        box-shadow: 0 10px 10px rgba($color: #6e6e6e, $alpha: 1.0);
+        text-align: center;
+        color: white;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    &__back-tittle {
+        margin: 0;
+    }
+
+    &__back-content {}
+
+    &__icon-list {
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__icon-wrapp {
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        border-radius: 50%;
+        background-color: white;
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+        fill: rgb(109, 135, 168);
+
+    }
+}
+
+.card:hover .card__back {
+    transform: rotateY(0deg);
+}
+
+.card:hover .card__front {
+    transform: rotateY(-180deg);
+}

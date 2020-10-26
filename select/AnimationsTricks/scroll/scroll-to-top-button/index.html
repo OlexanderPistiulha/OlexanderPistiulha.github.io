@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="top" id="top">
+        <a href="#" class="top__link">
+            <img src="assets//img/top.png" alt="" class="top__img">
+        </a>
+    </div>
+
+    <script>
+        let scrollButton = document.getElementById("top");
+        window.addEventListener('scroll', function () {
+            scrollButton.style.transform = `rotate(${window.pageYOffset}deg)`;
+        })
+    </script>
+
+
+</body>
+
+</html>

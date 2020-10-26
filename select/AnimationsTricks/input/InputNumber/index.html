@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <section>
+        <div class="input">
+            <span class="input__next"></span>
+            <span class="input__prev"></span>
+            <div class=" input__box">
+                <span id="input__number">0</span>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let inputNumber = document.getElementById('input__number');
+        const inputNext = document.querySelector('.input__next');
+        const inputPrev = document.querySelector('.input__prev');
+
+        inputNext.addEventListener('click', () => {
+            inputNumber.textContent = ++inputNumber.textContent;
+        });
+        inputPrev.addEventListener('click', () => {
+            inputNumber.textContent = --inputNumber.textContent;
+        });
+    </script>
+
+</body>
+
+</html>

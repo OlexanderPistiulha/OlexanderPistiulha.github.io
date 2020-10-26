@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 10em;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 7em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 5em;
+  }
+}
+
+h1 .text {
+  position: relative;
+  text-transform: uppercase;
+  display: block;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.text:nth-child(1):before {
+  content: '';
+  position: absolute;
+  z-index: 20;
+  top: calc(50% - 15px);
+  right: 0;
+  width: 50%;
+  height: 30px;
+  background-color: #f00;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+h1:hover .text:nth-child(1):before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.text:nth-child(2):before {
+  content: '';
+  position: absolute;
+  z-index: 20;
+  top: calc(50% - 15px);
+  left: 0;
+  width: 50%;
+  height: 30px;
+  background-color: #f00;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+h1:hover .text:nth-child(2):before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.hide {
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
+}
+
+h1:hover .hide {
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
+  color: #f00;
+  opacity: 0;
+}
+
+h1:hover .text:nth-child(1) .hide {
+  padding-right: 30px;
+}
+
+h1:hover .text:nth-child(2) .hide {
+  padding-left: 40px;
+}
+/*# sourceMappingURL=style.css.map */
