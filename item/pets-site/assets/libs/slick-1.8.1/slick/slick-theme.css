@@ -1,0 +1,129 @@
+/* Слайдер */
+.slick-slider {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 66px;
+}
+
+@media screen and (max-width: 1350px) {
+    .slick-slider {
+        width: 90%;
+    }
+}
+
+/* Слайдер запущен */
+.slick-slider.slick-initialized {}
+
+/* Слайдер с точками */
+.slick-slider.slick-dotted {}
+
+/* Ограничивающая оболочка */
+.slick-list {
+    /* padding: 0 50px; */
+}
+
+/* Лента слайдов */
+.slick-track {}
+
+/* Слайд */
+.slick-slide {
+    /* width: 270px; */
+}
+
+/* Слайд активный (показывается) */
+.slick-slide.slick-active {}
+
+/* Слайд основной */
+.slick-slide.slick-current {}
+
+/* Слайд по центру */
+.slick-slide.slick-center {}
+
+/* Клонированный слайд */
+.slick-slide.slick-cloned {}
+
+/* Стрелка */
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    border: 2px solid #f1cdb3;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slick-arrow:hover {
+    background-color: rgb(241, 205, 179);
+}
+
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+    left: -50px;
+    background-image: url(../../../img/icon_arrow.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+
+
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+    right: -50px;
+    background-image: url(../../../img/icon_arrow.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: rotate(-180deg);
+}
+
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {}
+
+/* Точки (булиты) */
+.slick-dots {
+    position: absolute;
+    bottom: -40px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+
+.slick-dots li {
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+
+.slick-dots li div {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    border: 2px solid #f1cdb3;
+    border-radius: 50%;
+
+}
+
+.slick-dots .slick-active {
+    background-color: #f1cdb3;
+    border-radius: 50%;
+}

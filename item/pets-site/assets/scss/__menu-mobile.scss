@@ -1,0 +1,118 @@
+.mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 3000;
+
+    @media screen and (max-width: 500px) {
+        width: 100%;
+    }
+
+
+    @media screen and (max-width: 750px) {
+        display: block;
+    }
+
+    &__icon {
+        width: 33px;
+        height: 18px;
+        position: relative;
+        z-index: 4000;
+        top: 29px;
+        left: 29px;
+        cursor: pointer;
+        transition: left 0.2s ease-in;
+    }
+
+
+    &__icon::before {
+        content: "";
+        display: block;
+        width: 33px;
+        height: 3px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1100;
+        background-color: $primary-color;
+        transition: all 0.2s ease-in;
+    }
+
+    &__icon::after {
+        content: "";
+        display: block;
+        width: 33px;
+        height: 3px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 1100;
+        background-color: $primary-color;
+        transition: all 0.2s ease-in;
+    }
+
+    &__icon-active::before {
+        transform: rotate(45deg);
+        top: 50%;
+    }
+
+    &__icon-active::after {
+        transform: rotate(-45deg);
+        top: 50%;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: -350px;
+        width: 320px;
+        height: 100vh;
+        background: linear-gradient(45deg, $bg-color, rgb(34, 30, 31));
+        opacity: 0.96;
+        box-shadow: 0px 0px 53px -20px $bg-color;
+        transition: left 0.2s ease-in;
+
+        @media screen and (max-width: 500px) {
+            left: -110%;
+            width: 100%;
+        }
+    }
+
+    &__body-active {
+        left: 0;
+    }
+
+    &__logo {
+        // width: 70%;
+        margin: 0 auto;
+        margin-bottom: 53px;
+        text-align: center;
+    }
+
+    &__nav-wrapp {}
+
+    &__nav-list {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__nav-item {
+        margin-bottom: 12px;
+    }
+
+    &__nav-link {
+        position: relative;
+        font-size: 15px;
+        font-family: $font-two-normal;
+        line-height: 29px;
+        font-weight: 400;
+        color: #cdcdcd;
+    }
+
+}
