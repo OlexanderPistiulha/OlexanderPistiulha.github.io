@@ -1,0 +1,68 @@
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+h2 {
+    font-family: NunitoSans;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: $tittle-color;
+}
+
+.line {
+    width: 78px;
+    height: 6px;
+    background-color: $primary-color;
+}
+
+
+button {
+    display: inline-block;
+    border: none;
+  
+}
+
+button:hover,
+button:focus {
+    background: none;
+}
+
+button:focus {
+    outline: none;
+    outline-offset: none;
+}
+
+button:active {
+    transform: none;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiking Club</title>
+    <link rel="shortcut icon" href="assets/img/vans.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">   
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="conteiner">
+                <nav class="menu">
+                    <div class="logo">
+                        <a href="index.html" class="logo__link">
+                            <img src="assets/img/logo.png" alt="" class="logo__img">
+                        </a>
+                    </div>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="index.html" class="menu__link">Home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="upcoming-treks.html" class="menu__link">Upcoming Treks</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="treks.html" class="menu__link">Trek for Family</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="contact.html" class="menu__link">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div class="burger">
+                        <span class="burger__item"></span>
+                        <span class="burger__item"></span>
+                        <span class="burger__item"></span>
+                    </div>
+                </nav>
+                <nav class="menu-mobile">
+                    <div class="logo logo__mobile">
+                        <a href="" class="logo__link">
+                            <img src="assets/img/logo.png" alt="" class="logo__img">
+                        </a>
+                    </div>
+                    <ul class="menu-mobile__list">
+                        <li class="menu-mobile__item">
+                            <a href="index.html" class="menu-mobile__link">Home</a>
+                        <li class="menu-mobile__item">
+                            <a href="upcoming-treks.html" class="menu-mobile__link">Upcoming Treks</a>
+                        </li>
+                        <li class="menu-mobile__item">
+                            <a href="treks.html" class="menu-mobile__link">Trek for Family</a>
+                        </li>
+                        <li class="menu-mobile__item">
+                            <a href="contact.html" class="menu-mobile__link">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__body">
+                    <div style="width: 90%; margin: 0 auto; display: flex; justify-content: center; align-items: center;">
+                        <h2 class="title" style="line-height: 200px;">Page of treks</h2>
+                    </div>
+                   
+                </div>
+            </div>
+        </header>
+    </div>
+    <script src="assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="assets/js/textyle.js"></script>
+    <script>
+        $(function () {
+            $('.title').textyle({
+                easing: 'linear',
+                callback: function () {
+                    $(this).css({
+                        color: '#232a31',
+                        transform: 'translateY(0px) rotateY(360deg)'
+                    });
+                }
+            });
+
+        })
+    </script>
+</body>
+
+</html>
