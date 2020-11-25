@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <link rel="stylesheet" href="assets/css/style.css">   
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 
@@ -42,7 +42,7 @@
                             <a href="#contacts" class="menu__link">Контакты</a>
                         </li>
                     </ul>
-                    <a href="#" class="button button__active">Оставить заявку</a>
+                    <div class="button button__active">Оставить заявку</div>
                 </nav>
                 <div class="burger">
                     <span class=""></span>
@@ -51,8 +51,8 @@
 
         </div>
 
-        <section class="first-screen" id="home" >
-        
+        <section class="first-screen" id="home">
+
             <div class="conteiner">
                 <div class="first-screen__body">
                     <div class="first-screen-content">
@@ -303,12 +303,12 @@
             </div>
         </section>
 
-         <section class="feedback" id="feedback"> 
+        <section class="feedback" id="feedback">
             <div class="conteiner">
                 <div class="feedback__body">
                     <h2 class="title title__black">Отзывы</h2>
                     <div class="feedback__content">
-                        <div class="owl-carousel slider">
+                        <div class=" slider">
                             <div class="slider__item">
                                 <div class="slider__user">
                                     <div class="slider__img-wrapp">
@@ -381,7 +381,7 @@
                     </div>
                 </div>
             </div>
-        </section> 
+        </section>
 
         <section class="about" id="about">
             <div class="conteiner">
@@ -407,7 +407,7 @@
                                 Присоединяйтесь! <br>
                                 Вместе создадим нечто потрясающее!
                             </p>
-                            <a href="#" class="button button__active">Оставить заявку</a>
+                            <div class="button button__active">Оставить заявку</div>
                         </div>
                     </div>
                 </div>
@@ -546,12 +546,44 @@
 
     </div>
 
-  
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="assets/js/menuActiveItem.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+  <div></div>
 
-  
+    <script>
+        $(document).ready(function () {
+            $('.slider').slick({
+                infinite: true,
+                dots: false,
+                speed: 300,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                responsive: [{
+                        breakpoint: 1170,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 800,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            arrows: false,
+                        }
+                    }                                
+                ]
+            });
+        });
+    </script>
+
+
 </body>
 
 </html>

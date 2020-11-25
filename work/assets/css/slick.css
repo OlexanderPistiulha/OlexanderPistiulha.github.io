@@ -31,6 +31,104 @@
   cursor: hand;
 }
 
+/* Arrows */
+.slick-prev,
+.slick-next {
+  z-index: 100;
+  margin: 0;
+  width: 83px;
+  height: 83px;
+  background-color: #e6e6e6;
+  border-radius: 50%;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+@media screen and (max-width: 1400px) {
+  .slick-prev,
+  .slick-next {
+    top: 102%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .slick-prev,
+  .slick-next {
+    display: none;
+  }
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: #7e14bb;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.slick-prev div,
+.slick-next div {
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/arrow.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-filter: contrast(0);
+          filter: contrast(0);
+}
+
+.slick-prev:hover div,
+.slick-next:hover div {
+  background-image: url(../img/arrow.png);
+  -webkit-filter: contrast(100%);
+          filter: contrast(100%);
+}
+
+.slick-prev {
+  left: -100px;
+}
+
+@media screen and (max-width: 1400px) {
+  .slick-prev {
+    left: 40%;
+  }
+}
+
+.slick-next {
+  right: -100px;
+}
+
+@media screen and (max-width: 1400px) {
+  .slick-next {
+    right: 40%;
+  }
+}
+
+.slick-next div {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
 .slick-track {
   position: relative;
   left: 0;
@@ -51,6 +149,10 @@
 
 .slick-loading .slick-track {
   visibility: hidden;
+}
+
+.slick-dots {
+  display: none;
 }
 
 .slick-slide {
@@ -91,6 +193,18 @@
 }
 
 .slick-arrow.slick-hidden {
+  display: none;
+}
+
+.slick-dots {
+  display: none;
+}
+
+.slick-dots li {
+  display: none;
+}
+
+.slick-dots li button {
   display: none;
 }
 /*# sourceMappingURL=slick.css.map */
