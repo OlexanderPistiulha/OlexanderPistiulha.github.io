@@ -44,10 +44,11 @@
 body,
 html {
   width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   background-color: #fff;
-  overflow-x: hidden;
+}
+
+.static-body {
+  overflow-y: hidden;
 }
 
 a,
@@ -74,9 +75,44 @@ ul {
   padding-left: 0;
 }
 
+input,
+textarea {
+  outline: none;
+}
+
+input:active,
+textarea:active {
+  outline: none;
+}
+
+:focus {
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+textarea {
+  resize: horizontal;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
 .wrapper {
   width: 100%;
   position: relative;
+  overflow-x: hidden;
 }
 
 .conteiner {
@@ -1463,5 +1499,178 @@ ul {
   font-size: 16px;
   font-weight: 500;
   color: #ffffff;
+}
+
+.modal-window {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 11000;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 10px;
+  width: 98%;
+  max-width: 600px;
+  padding: 30px;
+  background-color: #fafafa;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.3);
+          box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.3);
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+@media screen and (max-width: 400px) {
+  .modal-window {
+    padding: 20px;
+  }
+}
+
+.modal-window__active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-window__close {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-window__bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10500;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.modal-window__bg-active {
+  background-color: rgba(5, 5, 5, 0.7);
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-window__bg-close {
+  background-color: rgba(5, 5, 5, 0);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.input-wrapp {
+  width: 100%;
+  margin-bottom: 30px;
+  position: relative;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 400px) {
+  .input-wrapp {
+    margin-bottom: 20px;
+  }
+}
+
+.input {
+  width: 100%;
+  padding: 20px 20px 20px 55px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(5, 5, 5, 0.1);
+          box-shadow: 0px 0px 20px 0px rgba(5, 5, 5, 0.1);
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Ekibastuz';
+  color: #050505;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+@media screen and (max-width: 400px) {
+  .input {
+    padding: 15px 15px 15px 55px;
+  }
+}
+
+.input::-webkit-input-placeholder {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Ekibastuz';
+  color: #919090;
+}
+
+.input:-ms-input-placeholder {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Ekibastuz';
+  color: #919090;
+}
+
+.input::-ms-input-placeholder {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Ekibastuz';
+  color: #919090;
+}
+
+.input::placeholder {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Ekibastuz';
+  color: #919090;
+}
+
+.input:focus {
+  -webkit-box-shadow: 0px 0px 20px 0px #7e14bb12;
+          box-shadow: 0px 0px 20px 0px #7e14bb12;
+  background-color: #7e14bb1b;
+}
+
+.input:focus .one {
+  color: red;
+}
+
+.input__textarea {
+  padding: 20px 20px 20px 15px;
+}
+
+.input-img {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  z-index: 12000;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.input-img i {
+  font-family: FontAwesome;
+  font-size: 24px;
+  font-style: normal;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+  color: #7e14bb;
+}
+
+.button-wrapp {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 /*# sourceMappingURL=style.css.map */

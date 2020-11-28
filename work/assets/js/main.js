@@ -3,12 +3,9 @@ window.addEventListener('DOMContentLoaded', function () {
 
     // for menu burger------------------------------------------------------------
 
-
     const burger = document.querySelector('.burger');
     const menuWrapp = document.querySelector('.menu-wrapp__mobile');
     const menu = document.querySelector('.menu');
-
-
 
     burger.addEventListener('click', function () {
         burger.classList.toggle('burger-active');
@@ -20,10 +17,13 @@ window.addEventListener('DOMContentLoaded', function () {
 
         if (e.target.classList.contains('menu__link') || e.target.classList.contains('menu__item')) {
             burger.classList.toggle('burger-active');
-            menuWrapp.classList.toggle('menu-wrapp__mobile-active');           
+            menuWrapp.classList.toggle('menu-wrapp__mobile-active');
         } else return;
     });
 
+    // if(menuWrapp.classList.contains('menu-wrapp__mobile-active')){
+    //     document.body.classList.add('static-body');
+    // }
 
 
     // for tabs---------------------------------------------------------------------
@@ -56,7 +56,6 @@ window.addEventListener('DOMContentLoaded', function () {
             tabContent[i].classList.add('show');
         }
 
-
         tabMenuItem[i].classList.add('tabs__item-menu-active');
     }
 
@@ -73,13 +72,12 @@ window.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    //for header------------------------------------------------------------------
     // header adhere to scroll-----------------------------------------------------
     let header = document.querySelector('.header-wrapp'),
         services = document.querySelector('.first-screen').clientHeight;
 
-        console.log(services);
-        
+    console.log(services);
+
 
     window.addEventListener('scroll', function () {
         let scrolled = document.documentElement.scrollTop;
@@ -88,7 +86,7 @@ window.addEventListener('DOMContentLoaded', function () {
             header.classList.remove('header-hide');
             header.classList.add('header-show');
 
-        } else if (scrolled < services ) {
+        } else if (scrolled < services) {
             header.classList.remove('header-show');
             header.classList.add('header-hide');
         } else {
@@ -96,6 +94,48 @@ window.addEventListener('DOMContentLoaded', function () {
             header.classList.add('header-show');
         }
     });
-    // header adhere to scroll-----------------------------------------------------
+
+    // ========================================modal window========================================
+    const order = document.querySelectorAll('.button__order'),
+        modalWindow = document.querySelector('.modal-window'),
+        modalWindowBg = document.querySelector('.modal-window__bg'),
+        modalWindowClose = document.querySelector('.button__close');
+
+    order.forEach((button) => {
+        button.addEventListener('click', () => {
+            modalWindow.classList.remove('modal-window__close');
+            modalWindowBg.classList.remove('modal-window__bg-close');
+            modalWindow.classList.add('modal-window__active');
+            modalWindowBg.classList.add('modal-window__bg-active');
+
+            document.body.classList.add('static-body');
+        });
+    });
+
+    modalWindowBg.addEventListener('click', () => {
+        modalWindowBg.classList.remove('modal-window__bg-active');
+        modalWindowBg.classList.add('modal-window__bg-close');
+        modalWindow.classList.remove('modal-window__active');
+        modalWindow.classList.add('modal-window__close');  
+
+        burger.classList.toggle('burger-active');
+        menuWrapp.classList.toggle('menu-wrapp__mobile-active');
+
+        document.body.classList.remove('static-body');
+    });
+
+
+    modalWindowClose.addEventListener('click', () => {
+        modalWindowBg.classList.remove('modal-window__bg-active');
+        modalWindowBg.classList.add('modal-window__bg-close');
+        modalWindow.classList.remove('modal-window__active');
+        modalWindow.classList.add('modal-window__close');
+
+        burger.classList.toggle('burger-active');
+        menuWrapp.classList.toggle('menu-wrapp__mobile-active');
+
+        document.body.classList.remove('static-body');
+    });
+
 
 });
