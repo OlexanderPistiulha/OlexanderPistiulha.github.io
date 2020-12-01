@@ -120,7 +120,7 @@
     }
 
     @media screen and (max-width: 1170px) {
-        padding: 20px 40px;      
+        padding: 20px 40px;
     }
 
     @media screen and (max-width: 550px) {
@@ -168,7 +168,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-  
+
 
 
     @media screen and (max-width: 1170px) {
@@ -178,8 +178,8 @@
         position: fixed;
         top: 0;
         z-index: 2000;
-        width: 300px; 
-        height: 100vh;  
+        width: 300px;
+        height: 100vh;
         // overflow-y: scroll;  
         background-color: #ffffff;
         box-shadow: 0px 15px 65px 0px rgba(0, 0, 0, 0.1);
@@ -194,7 +194,7 @@
     &__mobile {
         left: -100%;
         transition: 1s;
-        
+
     }
 
     &__mobile-active {
@@ -324,6 +324,10 @@
     background-position: center;
     background-repeat: no-repeat;
     margin-bottom: 95px;
+
+    @media screen and (max-width: 600px) {
+        background-image: url(../img/first-screen-bg-mobile.png);
+    }
 
     &__body {
         display: flex;
@@ -738,6 +742,10 @@
     background-size: cover;
     background-repeat: no-repeat;
 
+    @media screen and (max-width: 600px) {
+        background-image: url(../img/number-bg-mobile.png);
+    }
+
     &__body {}
 
     &__content {
@@ -1126,7 +1134,7 @@
     }
 }
 
-.input-wrapp {  
+.input-wrapp {
     width: 100%;
     margin-bottom: 30px;
     position: relative;
@@ -1167,7 +1175,7 @@
         background-color: #7e14bb1b;
     }
 
-    &:focus .one{
+    &:focus .one {
         color: red;
     }
 
@@ -1185,12 +1193,10 @@
     z-index: 12000;
     transform: translateY(-50%);
 
-   
-
     i {
         font-family: FontAwesome;
         font-size: 24px;
-        font-style: normal;      
+        font-style: normal;
         transition: color .5s;
         color: #7e14bb;
     }

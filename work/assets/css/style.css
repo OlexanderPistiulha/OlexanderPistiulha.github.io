@@ -511,6 +511,12 @@ button {
   margin-bottom: 95px;
 }
 
+@media screen and (max-width: 600px) {
+  .first-screen {
+    background-image: url(../img/first-screen-bg-mobile.png);
+  }
+}
+
 .first-screen__body {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1036,6 +1042,12 @@ button {
   background-image: url(../img/numbers-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 600px) {
+  .numbers {
+    background-image: url(../img/number-bg-mobile.png);
+  }
 }
 
 .numbers__content {

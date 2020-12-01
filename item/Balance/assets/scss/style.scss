@@ -1,0 +1,855 @@
+@import "_font";
+@import "_variables";
+@import "_common";
+@import "_elements";
+
+
+
+.conteiner {
+    width: 100%;
+    max-width: 1660px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 1900px) {
+        padding: 0 5.8%;
+    }
+}
+
+
+// ==============================================header==============================================
+.header {
+    &__wrapp {
+        position: fixed;
+        z-index: 3000;
+        top: 0;
+        width: 100%;
+        padding: 27px 2%;
+        transition: .5s;
+
+        @media screen and (max-width: 1900px) {
+            padding: 27px 5.8%;
+        }
+
+        @media screen and (max-width: 900px) {
+            height: 100vh;
+            background-color: #fff;
+            right: -100%;
+            opacity: 0;
+            transition: .5s;
+        }
+
+        &-mobile-active {
+            @media screen and (max-width: 900px) {
+                right: 0;
+                opacity: 1;
+            }
+        }
+
+        &-scroll-on {
+            @media screen and (min-width: 900px) {
+                padding-top: 8px;
+                padding-bottom: 8px;
+                background-color: rgba(255, 255, 255, 1);
+                box-shadow: 0px 0px 23px 1px rgba(11, 12, 12, 0.1);
+            }
+
+        }
+
+        &-scroll-off {
+            @media screen and (min-width: 900px) {
+                padding-top: 27px;
+                padding-bottom: 27px;
+                background-color: rgba(255, 255, 255, 0);
+                box-shadow: 0 0 0 0 rgba(252, 253, 253, 0);
+            }
+        }
+    }
+
+    &__conteiner {
+        max-width: 1660px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and (max-width: 900px) {
+            justify-content: flex-start;
+            flex-direction: column;
+        }
+    }
+}
+
+// ----------------------logo----------------------
+.logo {
+    margin-right: 40px;
+
+    @media screen and (max-width: 900px) {
+        margin-right: 0;
+        margin-bottom: 70px;
+    }
+
+    &__link {}
+
+    &__img {
+        max-width: 90px;
+        max-height: 90px;
+
+        @media screen and (max-width: 1440px) {
+            max-width: 60px;
+            max-height: 60px;
+        }
+
+        @media screen and (max-width: 900px) {
+            max-width: 90px;
+            max-height: 90px;
+        }
+    }
+
+    &__footer {
+        margin-bottom: 30px;
+    }
+}
+
+// ----------------------menu----------------------
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 900px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    &__item {
+        margin-right: 40px;
+
+        @media screen and (max-width: 900px) {
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
+
+        &:nth-last-child(1) {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: 0.01em;
+
+        @media screen and (max-width: 1440px) {
+            font-size: 18px;
+        }
+
+    }
+}
+
+
+
+
+//==============================================first screen==============================================
+.first-screen {
+    position: relative;
+    z-index: 50;
+
+    &__body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 100px 0;
+
+        @media screen and (max-width: 900px) {
+            padding: 40px 0;
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and (max-width: 1000px) {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
+
+.img-girl {
+    position: relative;
+    z-index: 10;
+
+    @media screen and (max-width: 1000px) {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__img {
+        position: relative;
+        z-index: 10;
+        width: 600px;
+        height: 650px;
+
+        @media screen and (max-width: 1536px) {
+            width: 500px;
+            height: 550px;
+        }
+
+        @media screen and (max-width: 1300px) {
+            width: 400px;
+            height: 450px;
+        }
+
+        @media screen and (max-width: 450px) {
+            width: 200px;
+            height: 250px;
+        }
+    }
+
+    &__brush {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    &__leaf {
+        position: absolute;
+        width: 25%;
+        top: 75%;
+        left: 20%;
+        z-index: 1;
+        transform: translateY(-50%);
+    }
+}
+
+.offer {
+    width: 50%;
+
+    @media screen and (max-width: 1000px) {
+        width: 100%;
+        text-align: center;
+    }
+
+    &__tittle {
+        font-size: 85px;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        color: $tc-primary;
+        margin-bottom: 66px;
+
+        @media screen and (max-width: 1536px) {
+            font-size: 70px;
+        }
+
+        @media screen and (max-width: 1440px) {
+            font-size: 55px;
+        }
+
+        @media screen and (max-width: 1000px) {
+            margin-bottom: 30px;
+        }
+
+        @media screen and (max-width: 450px) {
+            font-size: 30px;
+            // margin-bottom: 30px;
+        }
+
+    }
+
+    &__subtitle {
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: 0.01em;
+        color: $tc-primary;
+        margin-bottom: 66px;
+
+        @media screen and (max-width: 1536px) {
+            font-size: 20px;
+        }
+
+        @media screen and (max-width: 1000px) {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+    }
+
+    &__button {}
+}
+
+// ===================================pregnant screen===================================
+
+.pregnant {
+    // position: relative;
+    // z-index: 100;
+    background-image: url(../img/pregnant-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 80%;
+
+    &__body {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: 100vh;
+        padding: 100px 0;
+
+        @media screen and (max-width: 900px) {
+            padding: 40px 0;
+        }
+    }
+
+    &__content {
+        width: 60%;
+
+        @media screen and (max-width: 1000px) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+// ===================================programs-screen===================================
+
+.programs {
+    background-color: #fff;
+    position: relative;
+
+    &__body {
+        padding: 100px 0;
+
+        @media screen and (max-width: 900px) {
+            padding: 40px 0;
+        }
+    }
+
+    &__content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        flex: 1;
+        min-width: 300px;
+        text-align: center;
+        margin-right: 15px;
+        margin-left: 15px;
+        margin-bottom: 30px;
+    }
+
+    &__img {
+        position: relative;
+        height: 200px;
+        margin-bottom: 60px;
+    }
+
+    &__img-girl {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        z-index: 10;
+        transform: translateX(-50%);
+    }
+
+    &__img-brush {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        z-index: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    &__title {
+        margin-bottom: 10px;
+        font-size: 25px;
+        font-weight: 700;
+        color: $tc-primary;
+
+        @media screen and (max-width: 1440px) {
+            font-size: 20px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 20.9px;
+        font-weight: 400;
+
+        @media screen and (max-width: 1440px) {
+            font-size: 18px;
+        }
+    }
+}
+
+// ====================================photo screen====================================
+.photo {
+    background-color: #fff;
+    position: relative;
+
+    &__body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 100px 0;
+
+        @media screen and (max-width: 900px) {
+            padding: 40px 0;
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and (max-width: 1000px) {
+            flex-direction: column;
+        }
+    }
+
+    &__text {
+        width: 45%;
+
+        @media screen and (max-width: 1000px) {
+            width: 90%;
+            text-align: center;
+        }
+    }
+}
+
+// =====================================join screen=====================================
+
+.join {
+    background-image: url(../img/join-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 20%;
+
+    &__body {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        min-height: 100vh;
+        padding: 100px 0;
+
+        @media screen and (max-width: 900px) {
+            padding: 40px 0;
+        }
+    }
+
+    &__content {
+        width: 50%;
+        position: relative;
+        z-index: 100;
+
+        @media screen and (max-width: 1000px) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+// ======================================galery======================================
+
+.galery {
+    background-color: #fff;
+    position: relative;
+
+    &__body {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        min-height: 100vh;
+        padding: 100px 0;
+
+        @media screen and (max-width: 900px) {
+            padding: 40px 0;
+        }
+    }
+
+    &__content {
+        position: relative;
+        z-index: 100;
+        width: 100%;
+
+        @media screen and (max-width: 1000px) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        flex: 1;
+        position: relative;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        max-width: 350px;
+        min-width: 300px;
+        height: 500px;
+        margin-right: 25px;
+        text-align: center;
+        margin-left: 25px;
+        margin-bottom: 50px;
+        transform-style: preserve-3d;
+        perspective: 600px;
+        transition: .5s;
+    }
+
+    &__item:hover &__back {
+        transform: rotateY(0deg);
+    }
+
+    &__item:hover &__front {
+        transform: rotateY(-180deg);
+    }
+
+    &__front {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        box-shadow: 11px 18px 23px 1px rgba(11, 12, 12, 0.1);
+        transform: rotateY(0deg);
+        transition: .5s;
+        background-color: #fff;
+    }
+
+    &__back {
+        object-fit: cover;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        backface-visibility: hidden;
+        box-shadow: 11px 18px 23px 1px rgba(11, 12, 12, 0.1);
+        transform: rotateY(180deg);
+        transition: 0.5s;
+        background-color: #fff;
+    }
+
+    &__img {
+        object-fit: fill;
+        width: 100%;
+        height: 300px;
+    }
+
+    &__name {
+        font-size: 33.4px;
+        line-height: 33px;
+        font-weight: 700;
+        color: $tc-primary;
+        margin: 33px 0;
+
+        @media screen and (max-width: 1440px) {
+            font-size: 24px;
+        }
+    }
+
+    &__text {
+        font-size: 16px;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 33px;
+        color: $tc-primary;
+    }
+
+    &__content {
+        font-size: 16px;
+        color: $tc-primary;
+    }
+}
+
+// ========================================video========================================
+
+.video {
+    background-color: $elem-primary-color;
+
+    &__body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 100px 0;
+
+        @media screen and (max-width: 900px) {
+            padding: 40px 0;
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and (max-width: 1000px) {
+            flex-direction: column;
+        }
+    }
+
+    &__text {
+        width: 45%;
+
+        @media screen and (max-width: 1000px) {
+            width: 90%;
+            text-align: center;
+        }
+    }
+}
+
+// ============================================touch screen============================================
+
+.touch {
+    background-color: #fff;
+    position: relative;
+
+    &__body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 100px 0;
+
+        @media screen and (max-width: 900px) {
+            padding: 40px 0;
+        }
+    }
+
+    &__content {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        z-index: 100;
+
+        @media screen and (max-width: 100px) {
+            width: 100%;
+        }
+    }
+}
+
+.form {
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;   
+
+
+    &__input {
+        width: 100%;
+        font-family: 'Open Sans', sans-serif;
+        padding: 20px 40px;
+        background-color: #efefef;
+        border: 1.5px solid #b0b0b0;
+        font-size: 20.9px;
+        line-height: 1.2;
+        font-weight: 500;
+        letter-spacing: 0.01em;
+        color: $tc-primary;
+        margin-bottom: 33px;
+
+        @media screen and (max-width: 550px) {
+            font-size: 18px;
+            padding: 15px 30px;
+            margin-bottom: 30px;
+        }
+
+        &::placeholder {
+            color: $tc-form-placeholder;
+        }
+    }
+
+    &__textarea {
+        min-height: 160px;
+    }
+}
+
+// ==============================================footer==============================================
+.footer {
+    background-color: #484f5b;
+    padding: 60px 0;
+
+    &__body {}
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        flex-wrap: wrap;
+
+    }
+}
+
+.column {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 20px;
+
+    @media screen and (max-width: 550px) {
+        align-items: center;
+    }
+
+    &__nav {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        color: #ffffff;
+        font-weight: 400;
+    }
+
+    &__big {
+        width: 188px;
+        min-width: 188px;
+
+        @media screen and (max-width: 550px) {
+            width: 100%;
+            text-align: center;
+        }
+
+    }
+
+    &__company-name {
+        font-size: 25.4px;
+        line-height: 25px;
+        font-weight: 600;
+        letter-spacing: 0.01em;
+        color: #ffffff;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        font-size: 16.9px;
+        line-height: 29px;
+        font-weight: 500;
+        color: #ffffff;
+    }
+
+    &__small {
+        width: 100px;
+
+        @media screen and (max-width: 550px) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+// =======================================scenery elements=================================
+.position {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    z-index: 5;
+
+    @media screen and (max-width: 700px) {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.top {
+    top: 0;
+}
+
+.half-top {
+    top: 50%;
+}
+
+.right {
+    right: 0;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.half-bottom {
+    bottom: -50%;
+}
+
+.left {
+    left: 0;
+}
+
+.layer {
+    position: absolute;
+
+    &__one {
+        z-index: 3;
+    }
+
+    &__two {
+        z-index: 2;
+    }
+
+    &__three {
+        z-index: 1;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.first-screen-display-t-r {
+    @media screen and (max-width: 900px) {
+        display: none;
+    }
+}
+
+.join-screen-title-display-t-l {
+    width: 300px;
+    left: -30px;
+
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
+}
+
+.galery-screen-display-b-r {
+    width: 400px;
+
+    @media screen and (max-width: 900px) {
+        width: 200px;
+    }
+}
+
+.galery-screen-display-t-l {
+    width: 300px;
+
+    @media screen and (max-width: 550px) {
+        display: none;
+    }
+}
