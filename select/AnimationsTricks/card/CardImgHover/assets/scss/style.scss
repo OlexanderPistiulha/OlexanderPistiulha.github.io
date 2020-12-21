@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #4d4e4e;
+    transition: 1s ease-in-out;
+}
+
+.img {
+    width: 60%;
+    border-radius: 40px;
+    box-shadow: 0px 0px 34px -5px #00729c;
+    filter: grayscale(100%);
+    transition: .5s ease-in-out;
+
+    @media screen and(max-width: 700px) {
+        width: 90%;
+    }
+
+    &:hover {
+        filter: grayscale(0%);
+    }
+}

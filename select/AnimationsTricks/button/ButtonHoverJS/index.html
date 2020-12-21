@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <section>
+        <a href="#" class="button"><span></span>Read More</a>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function (e) {
+            $('.button').on('mouseenter', function (e) {
+                x = e.pageX - $(this).offset().left;
+                y = e.pageY - $(this).offset().top;
+                $(this).find('span').css({
+                    top: y,
+                    left: x
+                })
+            })
+            $('.button').on('mouseout', function (e) {
+                x = e.pageX - $(this).offset().left;
+                y = e.pageY - $(this).offset().top;
+                $(this).find('span').css({
+                    top: y,
+                    left: x
+                })
+            })
+        })
+    </script>
+</body>
+
+</html>

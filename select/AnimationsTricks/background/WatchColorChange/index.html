@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <section>
+        <div class="nav">
+            <span class="one"></span>
+            <i class="one"></i>
+            <span class="two  active"></span>
+            <i class="two"></i>
+            <span class="three"></span>
+            <i class="three"></i>
+            <span class="four"></span>
+            <i class="four"></i>
+            <img class="img" src="assets/img/watches.png" alt="">
+        </div>
+    </section>
+   
+    <script>
+        const nav = document.querySelector('.nav');
+        nav.addEventListener('click',  changeColor);
+
+        function changeColor(e) {
+            document.querySelectorAll('span.active').forEach((item) => {
+                item.classList.remove('active');
+            })
+            if( e.target.tagName == 'SPAN'){
+                 e.target.classList.add('active');
+                
+            } else {
+                document.getElementsByTagName('SPAN')[0].classList.add('active')
+            }
+           
+        }
+    </script>
+</body>
+
+</html>

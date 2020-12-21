@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <section class="section">
+        <img src="assets/img/img.jpg" alt="" class="img">
+    </section>
+
+    <script>
+        let img = document.querySelector('.img'),
+            section = document.querySelector('.section');
+
+        img.addEventListener('mouseover', changeStyleHover);
+        img.addEventListener('mouseout', changeStyleUnHover);
+
+        function changeStyleHover () {
+            section.style.background = '#013b5b';
+        }
+
+        function changeStyleUnHover () {
+            section.style.background = '#4d4e4e';
+        }
+    </script>
+</body>
+
+</html>
