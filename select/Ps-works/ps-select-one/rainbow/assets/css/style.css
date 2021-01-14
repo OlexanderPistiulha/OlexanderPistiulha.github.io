@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #faf9f9;
+}
+
+img {
+  width: 700px;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 750px) {
+  img {
+    width: 500px;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  img {
+    width: 350px;
+    height: 200px;
+  }
+}
+
+.img-comp-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 700px;
+  height: 500px;
+  -webkit-box-shadow: 0px 0px 22px -3px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 0px 22px -3px rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  overflow: hidden;
+  background: #888;
+}
+
+@media screen and (max-width: 750px) {
+  .img-comp-container {
+    width: 500px;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .img-comp-container {
+    width: 350px;
+    height: 200px;
+  }
+}
+
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.img-comp-img img {
+  display: block;
+}
+
+.img-comp-slider-line {
+  position: absolute;
+  z-index: 8;
+  cursor: ew-resize;
+  width: 4px;
+  top: 0;
+  bottom: 0;
+  height: 500px;
+  background-color: #f8f9fa;
+  opacity: 1;
+  -webkit-box-shadow: 0px 0px 22px -3px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 0px 22px -3px rgba(0, 0, 0, 0.7);
+}
+
+.img-comp-slider-line::before {
+  content: '';
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  width: 40px;
+  height: 40px;
+  background-color: #f8f9fa;
+  opacity: 1;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.img-comp-slider-line::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 12;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background: #888;
+  border-radius: 50%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.img-comp-slider-line:hover::after {
+  background: #fffefe;
+  border: 2px solid #888;
+}
+/*# sourceMappingURL=style.css.map */
