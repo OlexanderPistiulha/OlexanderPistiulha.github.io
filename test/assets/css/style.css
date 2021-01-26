@@ -397,6 +397,7 @@ a {
   font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
+  letter-spacing: 0.05em;
   width: calc(100% - 5px);
   border-bottom: 1px solid #cacaca;
   color: #cacaca;
@@ -2385,8 +2386,8 @@ ul.contact li:first-child {
     padding: 2em 20px 2em 20px;
     border-top: solid 1px rgba(255, 255, 255, 0.1);
   }
-  #footer section:first-of-type {
-    border-top: 0;
+  .footer-line {
+    border-top: solid 1px rgba(255, 255, 255, 0.1);
   }
   /* Copyright */
   #copyright {
@@ -2550,5 +2551,61 @@ ul.contact li:first-child {
 
 .about-content {
   margin-bottom: 60px;
+}
+
+.about-content:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.contact-list {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1000px) {
+  .contact-list {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+  }
+}
+
+.contact-list__item {
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+              -ms-grid-row-align: stretch;
+          align-self: stretch;
+  width: 30%;
+  min-width: 300px;
+  border-radius: 6px;
+  padding: 3em 2em 3em 2em;
+  overflow: hidden;
+  background: rgba(44, 47, 52, 0.95);
+}
+
+@media screen and (max-width: 1000px) {
+  .contact-list__item {
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contact-list__item {
+    width: 90%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
