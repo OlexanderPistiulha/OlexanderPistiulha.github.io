@@ -646,6 +646,10 @@ a {
   }
 }
 
+.photo-block__img {
+  width: 100%;
+}
+
 .photo-block__title {
   font-size: 14px;
   font-family: "Roboto";
