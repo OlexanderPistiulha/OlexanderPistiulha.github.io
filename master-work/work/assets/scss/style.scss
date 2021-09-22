@@ -1,0 +1,700 @@
+@import "_common-style";
+@import "_menu-mobile";
+@import "_animate-effect";
+
+
+.wrapper {}
+
+.conteiner {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+
+    @media screen and (max-width: 500px) {
+        padding: 0 10px;
+    }
+}
+
+
+
+.first-screen {
+    min-height: 100vh;
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70% 10%;
+    padding: 30px 0;
+
+    @media screen and (max-width: 1500px) {
+        background-position: 60% 10%;
+    }
+
+    @media screen and (max-width: 1000px) {
+        background-position: 40% 10%;
+    }
+
+    @media screen and (max-width: 760px) {
+        background-position: 30% 10%;
+    }
+
+
+
+    &__body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    &__tittle-wrapp {
+        margin-top: 20vh;
+        width: 446px;
+
+        @media screen and (max-width: 750px) {
+            text-align: center;
+            width: 90%;
+            margin: 20vh auto;
+        }
+
+        @media screen and (max-width: 400px) {
+            text-align: center;
+            width: 100%;
+            margin: 20vh auto;
+        }
+    }
+
+    &__tittle {
+        font-family: $font-one;
+        font-size: $font-size-1900-h1;
+        line-height: 57px;
+        font-weight: 400;
+        letter-spacing: 0.06em;
+        color: #ffffff;
+        margin-bottom: 45px;
+    }
+
+    &__subtittle {
+        font-family: $font-two-normal;
+        font-size: $font-size-text-1920px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #cdcdcd;
+        margin-bottom: 45px;
+
+        @media screen and (max-width: 1400px) {
+            font-size: $font-size-text;
+        }
+    }
+
+    &__button {
+        width: 205px;
+        text-align: center;
+        padding: 21px 0;
+        background-color: $primary-color;
+        border-radius: 26px;
+        cursor: pointer;
+
+        @media screen and (max-width: 750px) {
+            margin: 0 auto;
+        }
+    }
+
+    &__button-link {
+        font-family: $font-one;
+        font-size: $font-size-button;
+        font-weight: 400;
+        letter-spacing: 0.06em;
+        color: #292929;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 750px) {
+        display: none;
+    }
+
+    &__logo-wrapp {}
+
+    &__logo-tittle {
+        font-family: $font-one;
+        font-size: 45px;
+        font-weight: 400;
+        letter-spacing: 0.06em;
+        color: #f1cdb3;
+
+        @media screen and (max-width: 1400px) {
+            font-size: 30px;
+        }
+
+        @media screen and (max-width: 1000px) {
+            font-size: 27px;
+        }
+    }
+
+    &__logo-subtittle {
+        font-family: $font-two-normal;
+        font-size: 20px;
+        line-height: 29px;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+        color: #ffffff;
+
+        @media screen and (max-width: 1400px) {
+            font-size: 13px;
+        }
+
+        @media screen and (max-width: 1000px) {
+            font-size: 12px;
+        }
+    }
+
+    &__nav-wrapp {}
+
+    &__nav-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__nav-item {
+        margin-right: 40px;
+    }
+
+    &__nav-item:last-child {
+        margin-right: 0;
+    }
+
+
+    &__nav-link {
+        position: relative;
+        font-size: 20px;
+        font-family: $font-two-normal;
+        line-height: 29px;
+        font-weight: 400;
+        color: #cdcdcd;
+
+        @media screen and (max-width: 1400px) {
+            font-size: 18px;
+        }
+
+        @media screen and (max-width: 1000px) {
+            font-size: 15px;
+        }
+
+        &::after {
+            display: block;
+            position: absolute;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #f1cdb3;
+            content: "";
+            transition: width 0.3s ease-out;
+        }
+    }
+
+}
+
+a:hover:after,
+a:focus:after {
+    width: 100%;
+}
+
+
+// --------------------------------------------aboout--------------------------------------------
+
+
+
+.about {
+    padding: 89px 0;
+    background-color: rgb(252, 252, 252);
+
+    &__body {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (max-width: 700px) {
+            flex-direction: column;
+        }
+    }
+
+    &__img-wrapp {
+        margin-right: 120px;
+
+        @media screen and (max-width: 1000px) {
+            margin-right: 60px;
+        }
+
+        @media screen and (max-width: 700px) {
+            margin-right: 0;
+            margin-bottom: 50px;
+        }
+    }
+
+    &__img {
+        width: 300px;
+        height: 400px;
+
+        @media screen and (max-width: 1000px) {
+            width: 200px;
+            height: 300px;
+        }
+    }
+
+    &__content-wrapp {
+        width: 411px;
+
+        @media screen and (max-width: 700px) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    &__tittle {
+        font-family: $font-one;
+        font-size: $font-size-1900-h2;
+        line-height: 45px;
+        font-weight: 400;
+        letter-spacing: 0.06em;
+        color: #545454;
+        margin-bottom: 37px;
+
+        @media screen and (max-width: 700px) {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__text {
+        font-family: $font-two-normal;
+        font-size: $font-size-text-1920px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #4c4c4c;
+
+        @media screen and (max-width: 1400px) {
+            font-size: $font-size-text;
+        }
+    }
+}
+
+//  -----------------------------------------pets screen-----------------------------------------
+
+.pets {
+    padding: 89px 0;
+    background-color: rgb(246, 246, 246);
+
+    &__body {
+        text-align: center;
+    }
+
+    &__tittle {
+        font-family: $font-one;
+        font-size: $font-size-1900-h2;
+        line-height: 45px;
+        font-weight: 400;
+        letter-spacing: 0.06em;
+        color: #545454;
+        margin-bottom: 66px;
+    }
+
+    &__break {}
+
+    &__buttom-wrapp {
+        display: inline-block;
+        margin: 0 auto;
+        padding: 20px 48px;
+        background-color: #f1cdb3;
+        border: 2px solid #f1cdb3;
+        border-radius: 26px;
+        cursor: pointer;
+
+    }
+
+
+
+    &__button-text {
+        font-family: $font-one;
+        font-size: $font-size-text-1920px;
+        font-weight: 400;
+        letter-spacing: 0.06em;
+        color: #292929;
+    }
+}
+
+
+
+.slider {
+
+    &__slide {
+        padding: 40px;
+        background-color: rgb(250, 250, 250);
+        margin: 0 20px;
+    }
+
+    &__img {
+        width: 270px;
+        height: 270px;
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 1400px) {
+            width: 222px;
+            height: 222px;
+        }
+
+        @media screen and (max-width: 860px) {
+            width: 170px;
+            height: 170px;
+        }
+    }
+
+    &__text {
+        font-family: $font-one;
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 0.06em;
+        color: #545454;
+        margin-bottom: 25px;
+    }
+
+    &__button-wrapp {
+        padding: 20px 45px;
+        display: block;
+        border: 2px solid #f1cdb3;
+        border-radius: 26px;
+        cursor: pointer;
+
+
+    }
+
+    &__button-wrapp:hover {
+        background-color: #f1cdb3;
+    }
+
+    &__button-text {
+        font-family: $font-one;
+        font-size: $font-size-text-1920px;
+        font-weight: 400;
+        letter-spacing: 0.06em;
+        color: #292929;
+
+        @media screen and (max-width: 50px) {
+            font-size: $font-size-text;
+        }
+    }
+}
+
+
+
+
+//  -----------------------------------------help-screen-----------------------------------------
+
+.help {
+    padding: 89px 0 9px 0;
+    background-color: rgb(252, 252, 252);
+
+    &__body {
+        text-align: center;
+    }
+
+    &__tittle-wrapp {
+        margin: 0 auto;
+    }
+
+    &__tittle {
+        font-family: $font-one;
+        font-size: $font-size-1900-h2;
+        line-height: 45px;
+        font-weight: 400;
+        letter-spacing: 0.06em;
+        color: #545454;
+        margin-bottom: 80px;
+    }
+
+    &__break {
+
+        @media screen and (max-width: 1000px) {
+            display: none;
+        }
+    }
+
+    &__icons-wrapp {
+        width: 84%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        @media screen and (max-width: 1240px) {
+            width: 100%;
+        }
+    }
+
+    &__icon {
+        width: 170px;
+        margin-bottom: 80px;
+    }
+
+    &__img {
+        width: 58px;
+        height: 58px;
+        margin-bottom: 30px;
+    }
+
+    &__description {
+        font-family: $font-one;
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 0.06em;
+        color: #545454;
+
+        @media screen and (max-width: 1000px) {
+            font-size: 18px;
+        }
+    }
+}
+
+
+//  --------------------------donations screen--------------------------
+
+.donation {
+    padding: 89px 0;
+    background-color: rgb(246, 246, 246);
+
+    &__body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (max-width: 900px) {
+            flex-direction: column;
+        }
+    }
+
+    &__img-wrapp {
+        margin-right: 76px;
+
+        @media screen and (max-width: 1050px) {
+            margin-right: 27px;
+        }
+
+        @media screen and (max-width: 900px) {
+            margin-right: 0px;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__img {
+        width: 500px;
+        height: 260px;
+
+        @media screen and (max-width: 1050px) {
+            width: 400px;
+            height: 200px;
+        }
+
+        @media screen and (max-width: 900px) {
+            width: 340px;
+            height: 170px;
+        }
+
+        @media screen and (max-width: 400px) {
+            width: 281px;
+            height: 149px;
+        }
+    }
+
+    &__content {
+        width: 371px;
+
+        @media screen and (max-width: 900px) {
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+
+    &__tittle {
+        font-family: $font-one;
+        font-size: $font-size-1900-h2;
+        line-height: 45px;
+        font-weight: 400;
+        letter-spacing: 0.06em;
+        color: #545454;
+        margin-bottom: 15px;
+    }
+
+    &__break {
+
+        @media screen and (max-width: 900px) {
+            display: none;
+        }
+    }
+
+    &__bank-name {
+        font-family: $font-one;
+        font-size: $font-size-text-1920px;
+        line-height: 1.2;
+        font-weight: 400;
+        letter-spacing: 0.06em;
+        color: #545454;
+        margin-bottom: 13px;
+
+        @media screen and (max-width: 1400px) {
+            font-size: $font-size-text;
+        }
+    }
+
+    &__card-wrapp {
+        padding: 14px;
+        width: 319px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f1cdb3;
+        border-radius: 9px;
+        margin-bottom: 33px;
+
+        @media screen and (max-width: 900px) {
+            margin: 0 auto 33px auto;
+        }
+
+        @media screen and (max-width: 400px) {
+            width: 290px;
+        }
+
+    }
+
+    &__card-img {
+        width: 30px;
+        height: 24px;
+    }
+
+    &__card-number {
+        font-family: $font-two-normal;
+        font-size: $font-size-text-1920px;
+        font-weight: 400;
+        letter-spacing: 0.06em;
+        color: #292929;
+
+        // @media screen and (max-width: 1400px) {
+        //     font-size: $font-size-text;
+        // }
+    }
+
+    &__text {
+        font-family: $font-two-normal;
+        font-size: $font-size-text-1920px;
+        line-height: 18px;
+        font-weight: 400;
+        // font-style: italic;
+        color: #b2b2b2;
+
+
+        @media screen and (max-width: 1400px) {
+            font-size: $font-size-text;
+        }
+    }
+}
+
+
+// ----------------------------------- footer -----------------------------------
+
+
+.footer {
+    padding: 89px 0 49px 0;
+    background-image: url(../img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70% 10%;
+
+
+    @media screen and (max-width: 1500px) {
+        background-position: 60% 10%;
+    }
+
+    @media screen and (max-width: 1000px) {
+        background-position: 40% 10%;
+    }
+
+    @media screen and (max-width: 760px) {
+        background-position: 30% 10%;
+    }
+
+
+    &__body {
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+
+        @media screen and (max-width: 900px) {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    &__column-wrapp {
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        @media screen and (max-width: 900px) {
+            width: 100%;
+        }
+    }
+
+    &__column-one {
+        margin-right: 175px;
+
+        @media screen and (max-width: 900px) {
+            margin-right: 0;
+        }
+    }
+
+    &__column-two {}
+
+    &__tittle {
+        font-family: $font-one;
+        font-size: $font-size-1900-h2;
+        line-height: 45px;
+        font-weight: 400;
+        letter-spacing: 0.06em;
+        color: #ffffff;
+        margin-bottom: 40px;
+    }
+
+    &__item-wrapp {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-bottom: 40px;
+
+
+        @media screen and (max-width: 900px) {
+            justify-content: center;
+        }
+    }
+
+    &__icon {
+        margin-right: 22px;
+    }
+
+    &__text {
+        font-family: $font-two-normal;
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 0.06em;
+        color: #f1cdb3;
+
+        @media screen and (max-width: 1400px) {
+            font-size: $font-size-text;
+        }
+    }
+}

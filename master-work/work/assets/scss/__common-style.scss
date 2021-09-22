@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'Georgia';
+    src: url("../fonts/Georgia/georgia.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ArialMTRegula';
+    src: url("../fonts/ArialMT/arialmt.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ArialMTRegulaItalic';
+    src: url("../fonts/ArialMT/ARIALMTNARROWITALIC.TTF") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+$font-one: 'Georgia';
+$font-two-normal: 'ArialMTRegula';
+$font-two-italic: 'ArialMTRegulaItalic';
+
+$primary-color: rgb(241, 205, 179);
+$bg-color: rgb(57, 44, 37);
+
+$font-size-1900-h1: 45px;
+$font-size-1900-h2: 35px;
+
+$font-size-button: 17px;
+
+$font-size-text-1920px: 18px;
+$font-size-text: 15px;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    margin-left: 0;
+    padding-left: 0;
+
+}

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/libs/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="assets/libs/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+
+</head>
+<style>
+    .img {
+        width: 90%;
+    }
+
+    @media screen and (max-width: 1000px) {
+        .img {
+            width: 100%;
+        }
+
+        .img-big {
+            width: 100%;
+        }
+    }
+
+    .img-center {
+        display: block;
+        margin: 0 auto;
+    }
+
+    @media screen and (max-width: 500px) {
+        .img-center {
+            width: 70%;
+        }
+    }
+</style>
+
+<body class="preloader-active">
+
+    <section class="preloader">
+        <div class="loader">
+            <span class="loader__item" style="--i:2;"></span>
+            <span class="loader__item" style="--i:3;"></span>
+            <span class="loader__item" style="--i:1;"></span>
+            <span class="loader__item" style="--i:4;"></span>
+            <span class="loader__item" style="--i:5;"></span>
+            <span class="loader__item" style="--i:6;"></span>
+            <span class="loader__item" style="--i:7;"></span>
+            <span class="loader__item" style="--i:8;"></span>
+            <span class="loader__item" style="--i:9;"></span>
+            <span class="loader__item" style="--i:11;"></span>
+            <span class="loader__item" style="--i:10;"></span>
+            <span class="loader__item" style="--i:12;"></span>
+            <span class="loader__item" style="--i:13;"></span>
+            <span class="loader__item" style="--i:14;"></span>
+            <span class="loader__item" style="--i:15;"></span>
+            <span class="loader__item" style="--i:16;"></span>
+            <span class="loader__item" style="--i:17;"></span>
+            <span class="loader__item" style="--i:18;"></span>
+            <span class="loader__item" style="--i:19;"></span>
+            <span class="loader__item" style="--i:20;"></span>
+        </div>
+    </section>
+    <div class="wrapper">
+
+        <section class="first-screen__tutorial">
+            <div class="conteiner">
+                <div class="first-screen__body__tutorial">
+                    <div class="header">
+                        <a class="grow">
+                            <div class="header__logo-wrapp">
+                                <p class="header__logo-tittle">
+                                    easeMath
+                                </p>
+                                <p class="header__logo-subtittle">
+                                    Just do your Math
+                                </p>
+                            </div>
+                        </a>
+
+                        <!--------------------------------------- menu desktop------------------------------------- -->
+                        <nav class="header__nav-wrapp">
+                            <ul class="header__nav-list">
+                                <li class="header__nav-item"><a href="index.html" class="header__nav-link">Головна</a>
+                                </li>
+                                <li class="header__nav-item"><a href="tutorial.html"
+                                        class="header__nav-link">Туторіал</a>
+                                </li>
+                                <li class="header__nav-item"><a href="theme.html" class="header__nav-link">Матеріали</a>
+                                </li>
+                                <li class="header__nav-item"><a href="test.html" class="header__nav-link">Тести</a>
+                                </li>
+                                <!-- <li class="header__nav-item"><a href="contacts.html"
+                                        class="header__nav-link">Контакти</a>
+                                </li> -->
+                            </ul>
+                        </nav>
+                        <!-- ===================================end menu desktop=================================== -->
+                    </div>
+                    <!----------------------------------------menu mobile---------------------------------------->
+                    <div class="mobile">
+                        <div class="mobile__icon"> </div>
+                        <div class="mobile__body">
+                            <a href="#FirstScreen">
+                                <div class="header__logo-wrapp mobile__logo">
+                                    <p class="header__logo-tittle">
+                                        easeMath
+                                    </p>
+                                    <p class="header__logo-subtittle">
+                                        Just do your Math
+                                    </p>
+                                </div>
+                            </a>
+
+                            <nav class="mobile__nav-wrapp">
+                                <ul class="mobile__nav-list">
+                                    <li class="mpbile__nav-item"><a href="index.html"
+                                            class="header__nav-link">Головна</a>
+                                    </li>
+                                    <li class="mobile__nav-item"><a href="tutorial.html"
+                                            class="mobile__nav-link">Туторіал</a>
+                                    </li>
+                                    <li class="mobile__nav-item"><a href="theme.html"
+                                            class="mobile__nav-link">Матеріали</a></li>
+                                    <li class="mobile__nav-item"><a href="test.html" class="mobile__nav-link">Тести</a>
+                                    </li>
+                                    <!-- <li class="mobile__nav-item"><a href="contacts.html"
+                                            class="mobile__nav-link">Контакти</a></li> -->
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- <div class="first-screen__tittle-wrapp">
+                        <h1 class="first-screen__tittle">Gran для всіх хто хоче навчитись новому</h1>
+                        <p class="first-screen__subtittle">
+                          Бажання навчатися та програма Gran1 це все що Вам потрібно для успішного вивчення багатьох тем з математики та графічного аналізу функцій
+                        </p>
+                        <a href="#one">
+                            <div class="first-screen__button grow">
+                                <a href="Gran1.zip" download class="first-screen__button-link ">
+                                    ЗАВАНТАЖИТИ 
+                                </a>
+                            </div>
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <section class="tutorial">
+            <div class="conteiner">
+                <div class="tutorial__body">
+                    <h1 style="padding: 30px 0;">
+                        Подвійний інтеграл. Основні поняття та властивості.
+                    </h1>
+                    <p>
+                        Розглянемо задачу обчислення
+                        об’єму криволінійного циліндру.
+                        Нехай z = f(x, y) – невід’ємна,
+                        неперервна в області D функція. У
+                        тривимірному просторі рівняння
+                        z = f(x, y) визначає деяку поверхню Ω,
+                        яка проектується на площину xOy в
+                        область D . Тіло G , яке обмежено зверху
+                        поверхнею Ω, знизу областю D з межею
+                        L, з боків – циліндричною поверхнею з
+                        напрямною L і твірними, які паралельні
+                        осі Oz, називають криволінійним
+                        циліндром (рис.8).
+                    </p><br>
+                    <img class="img-center" src="theme-post/img/theme-post-one-img-one.JPG" alt="">
+                    <p>
+                        Знайдемо об’єм криволінійного циліндра.
+                    </p><br>
+                    <p>
+                        1. Розіб’ємо область D довільним чином на n*m ділянок D_i_j з кусковогладкими межами, L_i_j,
+                        (i=1,n), j(1,m) Таким чином, область D буде покрита
+                        сіткою, де D_i_j − клітинка сітки. Позначимо діаметр кожної клітинки d_i_j , а її
+                        площу − ∆S_i_j . У кожній клітинці D_i_j довільним чином виберемо точку
+                        M. Через межі L_i_j проведемо циліндричні поверхні G_i_j із твірними,
+                        паралельними осі Oz, і з висотою, яка дорівнює f − стовпчики G_i_j .
+                    </p><br>
+                    <p>
+                        Кількість стовпчиків G_i_j буде n*m , об’єм кожного з яких
+                    </p><br>
+                    <img class="img-center" src="theme-post/img/theme-post-one-img-two.JPG" alt=""><br>
+                    <p>Тоді для знаходження об’єму V криволінійного циліндра G будемо
+                        мати приблизну рівність</p><br>
+                    <img class="img-center" src="theme-post/img/theme-post-one-img-three.JPG" alt=""><br>
+                    <p>
+                        Сума яка має вигляд
+                    </p><br>
+                    <img class="img-center" src="theme-post/img/theme-post-one-img-four.JPG" alt=""><br>
+                    <p>називається інтегральною сумою.</p><br>
+                    <p>Нехай d − найбільше з чисел d_i_j . Очевидно, якщо d → 0, то, зокрема,
+                        n,m → ∞, для значення об’єму тіла дістанемо</p><br>
+                    <img class="img-center" src="theme-post/img/theme-post-one-img-five.JPG" alt=""><br>
+                    <p>Вираз праворуч називають подвійним інтегралом від функції f (x,y) за
+                        областю D і позначають </p><br>
+                    <img class="img-center" src="theme-post/img/theme-post-one-img-six.JPG" alt=""><br>
+                    <p>Отже, для об’єму циліндра G маємо</p><br>
+                    <img class="img-center" src="theme-post/img/theme-post-one-img-seven.JPG" alt=""><br>
+                    <p>В цьому полягає геометричний зміст подвійного інтеграла.</p><br>
+                    <p>Узагальнюючи конструкцію, застосовану при обчисленні об’єму
+                        циліндра, приходимо до наступного означення подвійного інтеграла за умови,
+                        що z = f(x,y) вже довільна функція, яка визначена в області D. </p><br>
+                    <p>Означення. Якщо існує скінченна границя інтегральної суми</p><br>
+                    <img class="img-center" src="theme-post/img/theme-post-one-img-eight.JPG" alt=""><br>
+                    <p>коли найбільший з діаметрів ділянок прямує до нуля, яка не
+                        залежить ані від способу розбиття області D на ділянки, ані від вибору точок у
+                        середині кожної ділянки, то її називають подвійним інтегралом за областю D
+                        від функції f і позначають </p><br>
+                    <img class="img-center" src="theme-post/img/theme-post-one-img-nine.JPG" alt=""><br>
+                    <p>Якщо функція f (x,y) неперервна в області D, то подвійний інтеграл існує</p><br>
+                    <img class="img-center" src="theme-post/img/theme-post-one-img-ten.JPG" alt=""><br>
+                    <p>Оскільки границя інтегральної суми за умови неперервності функції
+                        f (x,y) не залежить від способу розбиття області D на ділянки, то область D
+                        можна розбивати на ділянки D_i_j прямими, які паралельні осям координат</p><br>
+                    <p>Нехай ∆D_i_j – прямокутник зі сторонами</p><br>
+                    <img class="img-center" src="theme-post/img/theme-post-one-img-eleven.JPG" alt=""><br>
+                    <p>що належить області D (рис.9). Його площа дорівнює Δx_i Δy_j</p><br>
+                    <img class="img-center" src="theme-post/img/theme-post-one-img-twelve.JPG" alt=""><br>
+                    <p>Такому розбиттю відповідає інтегральна сума</p><br>
+                    <img class="img-center" src="theme-post/img/theme-post-one-img-thirteen.JPG" alt=""><br>
+                    <p>Тоді за означенням подвійного інтеграла</p><br>
+                    <img class="img-center" src="theme-post/img/thee-post-one-img-fourteen.JPG" alt=""><br>
+                    <p>чим і обґрунтовується позначення dxdy як міри (площі) елементарної ділянки. </p>
+                    <h2 style="padding: 30px 0;"> Властивості подвійного інтеграла</h2>
+                    <!-- <p>1. (лінійність). Для будь-яких 𝛼,𝛽𝜖R:</p><br>
+                    <img class="img-center" src="theme-post/img/theme-post-one-img-fifteen.JPG" alt=""><br>
+                    <p>за умови, що обидва подвійні інтеграли праворуч існують. </p><br>
+                    <p>2. (адитивність). Якщо область D є об’єднання
+                        двох областей D_1 та D_2 (рис.10), які не мають спільних
+                        внутрішніх точок, то </p><br>
+                    <img class="img-center" src="theme-post/img/theme-post-one-img-sixteen.JPG" alt=""><br>
+                    <img class="img-center" src="theme-post/img/theme-post-one-img-seventeen.JPG" alt=""><br>
+                    <p>3. (нормованість).</p><br>
+                    <img class="img-center" src="theme-post/img/theme-post-one-img-eightteen.JPG" alt=""><br>
+                    <p>4. Якщо f(x,y)≥0, (𝑥,𝑦)𝜖𝐷, і подвійний інтеграл</p><br>
+                    <img class="img-center" src="theme-post/img/theme-post-one-img-nineteen.JPG" alt=""><br>
+                    <p>існує, то</p><br>
+                    <img class="img-center" src="theme-post/img/theme-post-one-img-twenty.JPG" alt=""><br>
+                    <p></p> -->
+                    <img class="img-center img-big" src="theme-post/img/theme-post-one-img-twenty-two.JPG" alt="">
+                    <img class="img-center img-big" src="theme-post/img/theme-post-one-img-twenty-one.JPG" alt=""><br>
+                    <h3 style="padding: 30px 0;"> Приклад 1:</h3>
+                    <p>Обчислити подвійний інтеграл</p><br>
+                    <img class="img-center" src="theme-post/img/theme-post-one-img-twenty-three.JPG" alt=""><br>
+                    <p>
+                        область D обмежена прямими x = 3, y = -x, y = 2x.
+                    </p><br>
+                    <p>
+                        Розв’язок. Обчислення подвійного інтеграла зведемо до обчислення повторного інтегралу.
+                    </p><br>
+                    <p>Перш за все побудуємо область інтегрування (рис.15). Знайдемо точки перетину ліній, що обмежують
+                        область інтегрування,
+                        розв’язуючи відповідні системи рівнянь:</p>
+                    <img class="img-center" src="theme-post/img/theme-post-one-img-twenty-four.JPG" alt=""><br>
+                    <img class="img-center" src="theme-post/img/theme-post-one-img-twenty-five.JPG" alt=""><br>
+                    <p>Виберемо порядок інтегрування, пам’ятаючи, що зовнішній інтеграл
+                        повинен мати сталі межі інтегрування, а у внутрішнього інтеграла межі
+                        інтегрування будуть функції, що залежать від змінної зовнішнього інтеграла.
+                        Задана область D правильна у напрямі осі Оу, тому природно вибрати змінну х
+                        змінною зовнішнього інтеграла. Для заданої області D інтервал зміни змінної х
+                        буде 0 ≤ 𝑥 ≤ 3 (рис.15). Тепер, щоб визначити як змінюється змінна у, коли
+                        𝑥∈[0,3] будемо проводити через точки відрізку [0,3] на осі х довільні прямі,
+                        паралельні осі Оy, рухаючись по осі х від точки 0 до точки 3. Всі ці прямі
+                        будуть перетинати область D, при цьому точки входу цих прямих в область D
+                        будуть лежати на прямій 𝑦 = −𝑥, а точки виходу − на прямій y = 2x (рис. 16).
+                        Таким чином, для заданої області D, коли змінна х прямує від x_1 = 0 до x_2 = 3,
+                        змінна у змінюється від y_1(x) = -x до y_2(x) = 2x (це і є межі інтегрування
+                        внутрішнього інтеграла). </p><br>
+                    <img class="img-center" src="theme-post/img/theme-post-one-img-twenty-six.JPG" alt=""><br>
+                    <p>Отже, заданий подвійний інтеграл запишеться у вигляді повторного
+                        інтеграла:</p><br>
+                    <img class="img-center img-big" src="theme-post/img/theme-post-one-img-twenty-seven.JPG" alt=""><br>
+                    <p>Почнемо з обчислення внутрішнього інтеграла. Інтегруючи по y, змінну x
+                        вважаємо сталою:
+                    </p><br>
+                    <img class="img-center img-big" src="theme-post/img/theme-post-one-img-twenty-eight.JPG" alt=""><br>
+                    <p>Тепер обчислимо зовнішній інтеграл від функції, яку отримали при
+                        обчисленні внутрішнього інтеграла:</p><br>
+                    <img class="img-center img-big" src="theme-post/img/theme-post-one-img-twenty-nine.JPG" alt=""><br>
+               <p>Зауважимо, що можна було б вибрати у в якості змінної зовнішнього
+                інтеграла, але задана область D не є правильною у напрямі осі Ох, тому
+                довелось би розбити область D на дві правильні області у напрямі осі Ох (ОАC
+                та ОCВ) а, отже, для обчислення заданого інтеграла треба було б обчислити два
+                повторних інтеграли. Тому при виборі порядку інтегрування потрібно завжди
+                враховувати, який спосіб для обчислення найзручніший.</p><br>
+                </div>
+            </div>
+        </section>
+
+
+
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="assets/libs/slick-1.8.1/slick/slick.js"></script>
+
+    <script src="assets/js/main.js"> </script>
+</body>
+
+</html>
