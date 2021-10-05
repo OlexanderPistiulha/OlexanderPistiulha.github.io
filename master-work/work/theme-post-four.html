@@ -14,7 +14,32 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
 
 </head>
+<style>
+    .img {
+        width: 90%;
+    }
 
+    @media screen and (max-width: 1000px) {
+        .img {
+            width: 100%;
+        }
+
+        .img-big {
+            width: 100%;
+        }
+    }
+
+    .img-center {
+        display: block;
+        margin: 0 auto;
+    }
+
+    @media screen and (max-width: 500px) {
+        .img-center {
+            width: 70%;
+        }
+    }
+</style>
 
 <body class="preloader-active">
 
@@ -127,125 +152,70 @@
                 </div>
             </div>
         </section>
-        <section class="content">
-            <!-- <div class="tab">
-                <div class="conteiner">
-                    <div class="tab__content-wrapp">
-                        <div class="tab__name"><span>Sort blog:</span>
-                            <div class="tab__toggle"></div>
-                        </div>
-                        <ul class="tab__list tab__list-hide">
-                            <li class="tab__item-menu tab__item-menu-active">
-                                <span>all</span>
-                            </li>
-                            <li class="tab__item-menu">
-                                <span>photography</span>
-                            </li>
-                            <li class="tab__item-menu">
-                                <span> lifestyle</span>
-                            </li>
-                            <li class="tab__item-menu">
-                                <span>trip</span>
-                            </li>
-                            <li class="tab__item-menu">
-                                <span>inspiration</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div> -->
+
+        <section class="tutorial">
             <div class="conteiner">
-                <div class="content__body">
-
-
-
-                    <div class="post__flat-wrapp post__flat-wrapp-two">
-                        <aricle class="post post-square post-square-two ">
-                            <div class="post__thumbnail-wrapp">
-                                <a
-                                    href="https://docs.google.com/forms/d/e/1FAIpQLSeOP0hjMy6ysmBAfZ-1tMcMLcynu4lrb7PeE3mAydH7ItVCZg/viewform?usp=pp_url&entry.331264916=%D0%A4%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D0%B0+1">
-
-                                    <img src="assets/img/first-post.jpeg" alt="" class="post__thumbnail-square">
-                                </a>
-                                <div class="post__signatures">
-                                    <span class="post__category">Інтегрування</span>
-
-                                </div>
-                            </div>
-                            <div class="post-text">
-                                <div class="post__content-wrapp post__content-wrapp-long">
-                                    <a
-                                        href="https://docs.google.com/forms/d/e/1FAIpQLSeOP0hjMy6ysmBAfZ-1tMcMLcynu4lrb7PeE3mAydH7ItVCZg/viewform?usp=pp_url&entry.331264916=%D0%A4%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D0%B0+1">
-
-                                        <h2 class="post__title post__title-long"> Подвійний інтеграл. Основні поняття
-                                            та властивості.
-                                        </h2>
-                                    </a>
-                                </div>
-                            </div>
-                        </aricle>
-                        <aricle class="post post-square post-square-two ">
-                            <div class="post__thumbnail-wrapp">
-                                <a href="theme-post-two.html">
-                                    <img src="assets/img/second-post.jpeg" alt="" class="post__thumbnail-square">
-                                </a>
-                            </div>
-                            <div class="post-text">
-                                <div class="post__content-wrapp post__content-wrapp-long">
-                                    <a href="theme-post-two.html">
-                                        <h2 class="post__title post__title-long">
-                                            Подвійний інтеграл у прямокутних декартових координатах
-                                        </h2>
-                                    </a>
-                                </div>
-                            </div>
-                        </aricle>
-                        <aricle class="post post-square  post-square-two">
-                            <div class="post__thumbnail-wrapp">
-                                <a href="post-three.pdf">
-                                    <img src="assets/img/third-post.jpeg" alt="" class="post__thumbnail-square">
-                                </a>
-                            </div>
-                            <div class="post-text">
-                                <div class="post__content-wrapp post__content-wrapp-long">
-                                    <h2 class="post__title post__title-long">Подвійний інтеграл у полярних
-                                        координатах
-                                    </h2>
-                                </div>
-                            </div>
-                        </aricle>
-                        <aricle class="post post-square  post-square-two">
-                            <div class="post__thumbnail-wrapp">
-                                <a href="theme-post-four.html">
-                                    <img src="assets/img/high-post-thumbnail-one.jpg" alt=""
-                                        class="post__thumbnail-square">
-                                </a>
-                            </div>
-                            <div class="post-text">
-                                <div class="post__content-wrapp post__content-wrapp-long">
-                                    <h2 class="post__title post__title-long">Властивості визначеного інтеграла
-                                    </h2>
-                                </div>
-                            </div>
-                        </aricle>
-
-                        <!--end article -->
-                    </div><!-- end post__flat-wrapp-->
-                </div>
-                <!--end tabs__content-->
-                <div class="tab__content tab__content-fade"></div>
-                <div class="tab__content tab__content-fade">
-
-
-                    <!--end article -->
+                <div class="tutorial__body">
+                    <h1 style="padding: 30px 0;">
+                        Властивості визначеного інтеграла
+                    </h1>
+                    <p>
+                        Якщо f (x) ≡ 0 для x 𝜖 [a,b], то
+                    </p><br>
+                    <img class="img-center" src="theme-post/img-four/theme-post-four-img-one.JPG" alt=""><br>
+                    <p>
+                        Якщо f (x) ≡ 1 для x 𝜖 [a,b], то
+                    </p><br>
+                    <img class="img-center" src="theme-post/img-four/theme-post-four-img-two.JPG" alt=""><br>
+                    <p>
+                        Сталий множник можна виносити за знак інтеграла
+                    </p><br>
+                    <img class="img-center" src="theme-post/img-four/theme-post-four-img-three.JPG" alt=""><br>
+                    <p>
+                        Якщо – інтегровані функції на відрізку [a, b], то на цьому відрізку інтегровані
+                        також функції , причому
+                    </p><br>
+                    <img class="img-center" src="theme-post/img-four/theme-post-four-img-four.JPG" alt=""><br>
+                    <p>
+                        Із властивостей 3-4 випливає властивість лінійності визначеного інтеграла
+                    </p><br>
+                    <img class="img-center" src="theme-post/img-four/theme-post-four-img-five.JPG" alt=""><br>
+                    <p>
+                        Якщо 𝑎 ≤ 𝑐 ≤ 𝑏, то
+                    </p><br>
+                    <img class="img-center" src="theme-post/img-four/theme-post-four-img-six.JPG" alt=""><br>
+                    <p>
+                        Якщо 𝑎 ≤ 𝑏, то і функція f(x) - інтегровна на відрізку [a, b], причому f(x) ≥ 0 для x 𝜖
+                        [a,b], то
+                    </p><br>
+                    <img class="img-center" src="theme-post/img-four/theme-post-four-img-seven.JPG" alt=""><br>
+                    <p>
+                        Якщо 𝑎 ≤ 𝑏, f(x) ≤ g(x) для x 𝜖 [a,b], функції f(x), g(x) інтегровані на відрізку [a,b] то
+                    </p><br>
+                    <img class="img-center" src="theme-post/img-four/theme-post-four-img-eight.JPG" alt=""><br>
+                    <p>
+                        Якщо 𝑎 ≤ 𝑏, f(x) - інтегрованf на відрізку [a,b] то на цьому відрізку і інтегрована функція
+                        |f(x)|, причому
+                    </p><br>
+                    <img class="img-center" src="theme-post/img-four/theme-post-four-img-nine.JPG" alt=""><br>
+                    <p>
+                        Якщо f(x) - інтегрованf на відрізку [a,b] то
+                    </p><br>
+                    <img class="img-center" src="theme-post/img-four/theme-post-four-img-ten.JPG" alt=""><br>
+                    <p>
+                        Оцінка визначеного інтеграла.
+                        Якщо 𝑎 ≤ 𝑏, f(x) - неперервна на відрізку [a,b], m і M - найменше і найбільше значення функції
+                        f(x) на відрізку [a,b]
+                    </p><br>
+                    <img class="img-center" src="theme-post/img-four/theme-post-four-img-eleven.JPG" alt=""><br>
+                    <p>
+                        Теорема про середнє значення
+                        Якщо  f(x) - неперервна на відрізку [a,b],то існує тоска  с 𝜖 [a,b]
+                    </p><br>
+                    <img class="img-center" src="theme-post/img-four/theme-post-four-img-twelve.JPG" alt=""><br>
                 </div>
             </div>
-            <!--end post-wrapp-->
-
-    </div>
-    </div>
-    </section>
-
+        </section>
 
 
 

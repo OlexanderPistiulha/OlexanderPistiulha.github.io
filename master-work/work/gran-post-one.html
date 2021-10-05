@@ -14,7 +14,32 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
 
 </head>
+<style>
+    .img {
+        width: 90%;
+    }
 
+    @media screen and (max-width: 1000px) {
+        .img {
+            width: 100%;
+        }
+
+        .img-big {
+            width: 100%;
+        }
+    }
+
+    .img-center {
+        display: block;
+        margin: 0 auto;
+    }
+
+    @media screen and (max-width: 500px) {
+        .img-center {
+            width: 70%;
+        }
+    }
+</style>
 
 <body class="preloader-active">
 
@@ -127,125 +152,64 @@
                 </div>
             </div>
         </section>
-        <section class="content">
-            <!-- <div class="tab">
-                <div class="conteiner">
-                    <div class="tab__content-wrapp">
-                        <div class="tab__name"><span>Sort blog:</span>
-                            <div class="tab__toggle"></div>
-                        </div>
-                        <ul class="tab__list tab__list-hide">
-                            <li class="tab__item-menu tab__item-menu-active">
-                                <span>all</span>
-                            </li>
-                            <li class="tab__item-menu">
-                                <span>photography</span>
-                            </li>
-                            <li class="tab__item-menu">
-                                <span> lifestyle</span>
-                            </li>
-                            <li class="tab__item-menu">
-                                <span>trip</span>
-                            </li>
-                            <li class="tab__item-menu">
-                                <span>inspiration</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div> -->
+
+        <section class="tutorial">
             <div class="conteiner">
-                <div class="content__body">
-
-
-
-                    <div class="post__flat-wrapp post__flat-wrapp-two">
-                        <aricle class="post post-square post-square-two ">
-                            <div class="post__thumbnail-wrapp">
-                                <a
-                                    href="https://docs.google.com/forms/d/e/1FAIpQLSeOP0hjMy6ysmBAfZ-1tMcMLcynu4lrb7PeE3mAydH7ItVCZg/viewform?usp=pp_url&entry.331264916=%D0%A4%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D0%B0+1">
-
-                                    <img src="assets/img/first-post.jpeg" alt="" class="post__thumbnail-square">
-                                </a>
-                                <div class="post__signatures">
-                                    <span class="post__category">Інтегрування</span>
-
-                                </div>
-                            </div>
-                            <div class="post-text">
-                                <div class="post__content-wrapp post__content-wrapp-long">
-                                    <a
-                                        href="https://docs.google.com/forms/d/e/1FAIpQLSeOP0hjMy6ysmBAfZ-1tMcMLcynu4lrb7PeE3mAydH7ItVCZg/viewform?usp=pp_url&entry.331264916=%D0%A4%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D0%B0+1">
-
-                                        <h2 class="post__title post__title-long"> Подвійний інтеграл. Основні поняття
-                                            та властивості.
-                                        </h2>
-                                    </a>
-                                </div>
-                            </div>
-                        </aricle>
-                        <aricle class="post post-square post-square-two ">
-                            <div class="post__thumbnail-wrapp">
-                                <a href="theme-post-two.html">
-                                    <img src="assets/img/second-post.jpeg" alt="" class="post__thumbnail-square">
-                                </a>
-                            </div>
-                            <div class="post-text">
-                                <div class="post__content-wrapp post__content-wrapp-long">
-                                    <a href="theme-post-two.html">
-                                        <h2 class="post__title post__title-long">
-                                            Подвійний інтеграл у прямокутних декартових координатах
-                                        </h2>
-                                    </a>
-                                </div>
-                            </div>
-                        </aricle>
-                        <aricle class="post post-square  post-square-two">
-                            <div class="post__thumbnail-wrapp">
-                                <a href="post-three.pdf">
-                                    <img src="assets/img/third-post.jpeg" alt="" class="post__thumbnail-square">
-                                </a>
-                            </div>
-                            <div class="post-text">
-                                <div class="post__content-wrapp post__content-wrapp-long">
-                                    <h2 class="post__title post__title-long">Подвійний інтеграл у полярних
-                                        координатах
-                                    </h2>
-                                </div>
-                            </div>
-                        </aricle>
-                        <aricle class="post post-square  post-square-two">
-                            <div class="post__thumbnail-wrapp">
-                                <a href="theme-post-four.html">
-                                    <img src="assets/img/high-post-thumbnail-one.jpg" alt=""
-                                        class="post__thumbnail-square">
-                                </a>
-                            </div>
-                            <div class="post-text">
-                                <div class="post__content-wrapp post__content-wrapp-long">
-                                    <h2 class="post__title post__title-long">Властивості визначеного інтеграла
-                                    </h2>
-                                </div>
-                            </div>
-                        </aricle>
-
-                        <!--end article -->
-                    </div><!-- end post__flat-wrapp-->
-                </div>
-                <!--end tabs__content-->
-                <div class="tab__content tab__content-fade"></div>
-                <div class="tab__content tab__content-fade">
-
-
-                    <!--end article -->
+                <div class="tutorial__body">
+                    <h1 style="padding: 30px 0;">
+                        Приклад наближеного обчислення подвійного інтеграла з використанням програми Gran1
+                    </h1>
+                    <img class="img-center" src="gran-post/img/one.JPG" alt=""><br>
+                    <p>
+                        де f(x, y) функція виду f(x^2 + y^2),
+                    </p><br>
+                    <img class="img-center" src="gran-post/img/two.JPG" alt=""><br>
+                    <p>
+                        Покладемо y = 0 і скориставшись послугами програми Gran1, побудуємо графік функції f(x, 0).
+                        Далі, починаючи від точки (0, f (0,0))  і зміщуючись в бік збільшення абсциси x , вбудуємо
+                        в побудований графік функції f  (x,0) ламану лінію, розміщуючи вершини ламаної на графіку
+                        якомога недалеко одна від однієї і розміщуючи такі вершини вздовж графіка функції в межах зміни
+                        абсциси x в множині G . Далі звертаємось до послуг програми Gran1 «Операції», «Операції з
+                        ламаними», «Об’єм та площа поверхні тіла обертання, вісь OY ». В результаті отримаємо наближене
+                        значення інтеграла
+                    </p><br>
+                    <img class="img-center" src="gran-post/img/one.JPG" alt=""><br>
+                    <p>
+                        Нехай, наприклад, потрібно обчислити подвійний інтеграл
+                    </p><br>
+                    <img class="img-center" src="gran-post/img/three.JPG" alt=""><br>
+                    <img class="img-center" src="gran-post/img/four.JPG" alt=""><br>
+                    <img class="img-center" src="gran-post/img/five.JPG" alt=""><br>
+                    <p>
+                        Скориставшись послугами програми Gran1, звернемось до послуг «Об’єкт», «Створити»,
+                        введемо вираз явно заданої залежності
+                    </p><br>
+                    <img class="img-center" src="gran-post/img/six.JPG" alt=""><br>
+                    <p>
+                        і далі, звернувшись до послуг «Графік»,
+                        «Побудувати», побудуємо графік заданої залежності між абсцисами і ординатами точок на графіку
+                        (див. Рис. 14). Далі встановимо тип залежності між змінними «Ламана», звернемось до послуг
+                        «Об’єкт», «Створити», і у вікні, що з’явиться, вкажемо на спосіб задання вершин ламаної «Дані з
+                        екрану». Після цього вкажемо на побудованому графіку точки – вершини ламаної, для чого необхідно
+                        встановити курсор мишки у відповідну точку на графіку і натиснути ліву клавішу мишки. В
+                        результаті така точка буде відмічена і їй буде надано відповідний номер. Після введення
+                        останньої точки слід «натиснути» кнопку «Ок» в правому верхньому кутку графічного вікна (див.
+                        Рис. 15) і далі звернутись до послуг програми Gran1 «Графік», «Побудувати».
+                    </p><br>
+                    <img class="img-center" src="gran-post/img/seven.JPG" alt=""><br>
+                    <p>
+                        Щоб отримати шукане наближене значення подвійного інтеграла
+                    </p><br>
+                    <img class="img-center" src="gran-post/img/three.JPG" alt=""><br>
+                    <img class="img-center" src="gran-post/img/four.JPG" alt=""><br>
+                    яке в геометричному тлумаченні є об’єм під поверхнею Z = f(x, y) ≥ 0
+                    над областю G , звернемось до послуг програми Gran1 «Операції», «Операції з ламаними», «Об’єм та
+                    площа поверхні тіла обертання, вісь OY ». В результаті одержимо наближене значення інтеграла V = 1.005
+                    </p><br>
+                    <img class="img-center" src="gran-post/img/eight.JPG" alt=""><br>
                 </div>
             </div>
-            <!--end post-wrapp-->
-
-    </div>
-    </div>
-    </section>
-
+        </section>
 
 
 
